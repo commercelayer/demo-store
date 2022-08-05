@@ -1,0 +1,13 @@
+{
+  "name": "demo-store-lite",
+  "private": true,
+  "workspaces": [
+    "demo-store/packages/*"
+  ],
+  "scripts": {
+    "dev": "env $(awk 'NF > 0 && !/^#/ { print $0 }' .env.local | xargs) npm run dev -ws --if-present",
+    "export": "env $(awk 'NF > 0 && !/^#/ { print $0 }' .env.local | xargs) npm run export -ws --if-present",
+    "local:serve": "env $(awk 'NF > 0 && !/^#/ { print $0 }' .env.local | xargs) npm run local:serve -ws --if-present"
+  },
+  "license": "MIT"
+}
