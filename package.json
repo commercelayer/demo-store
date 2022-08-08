@@ -1,8 +1,8 @@
 {
-  "name": "demo-store-lite",
+  "name": "demo-store",
   "private": true,
   "workspaces": [
-    "demo-store/packages/*"
+    "demo-store-core/packages/*"
   ],
   "scripts": {
     "dev": "env $(awk 'NF > 0 && !/^#/ { print $0 }' .env.local | xargs) npm run dev -ws --if-present",

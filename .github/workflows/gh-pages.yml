@@ -76,7 +76,7 @@ jobs:
       run: |
         npm run export -ws --if-present
       env:
-        SITE_URL: https://marcomontalbano.github.io/demo-store
+        SITE_URL: https://commercelayer.github.io/demo-store
         NEXT_PUBLIC_BASE_PATH: /demo-store
         NEXT_PUBLIC_CL_CLIENT_ID: ${{ secrets.NEXT_PUBLIC_CL_CLIENT_ID }}
         NEXT_PUBLIC_CL_ENDPOINT: ${{ secrets.NEXT_PUBLIC_CL_ENDPOINT }}
@@ -90,5 +90,5 @@ jobs:
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_branch: gh-pages
-        publish_dir: ./demo-store/packages/website/out
+        publish_dir: ./demo-store-core/packages/website/out
         force_orphan: true
