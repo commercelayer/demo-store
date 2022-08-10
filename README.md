@@ -62,7 +62,7 @@ We have two repositories:
 * **[`demo-store`](https://github.com/commercelayer/demo-store) GitHub template**.
 
     This template is using the `demo-store-core` as a [git submodule](https://git-scm.com/book/en/v2/Git-Tools-Submodules).  
-    Using this way you don't have to care about the whole source code, *you can focus on you data*. You'll have free updates without any risk just by running
+    Using this way you don't have to care about the whole source code, *you can focus on you data*. You'll have free updates with almost no risk just by running:
 
     ```sh
     git submodule update --remote
@@ -126,23 +126,81 @@ npm run dev
 # http://localhost:3000/
 ```
 
-## JSON Data files
+## Customization
+
+You can customize three aspects of the Demo Store: content data, locales and configuration files.
+
+> :warning:  _Demo Store is continuously improving to provide new capabilities.  
+> When you update to the latest release, it can happen that the build is no more working. Take a look at the release notes to understand how to fix it by updating your customized files._
+
+### JSON data files
 
 As mentioned earlier, the Demo Store is built around a set of data that are stored as json files. This decision has been taken to decouple the Demo Store from any 3rd party services.
 
 To build your own Demo Store you'll have to create and manage these json data files.
 
-Json files are located at `data/json`, but you can choose a different position by changing the environment variable `NEXT_PUBLIC_JSON_DATA_FOLDER`.
+Json files are located at `data/json/`, but you can choose a different position by changing the environment variable `NEXT_PUBLIC_JSON_DATA_FOLDER`.
 
-We also have type-definition file located at `packages/types/src/json`. We are uring [zod](https://github.com/colinhacks/zod) for the schema validation. Take a look at these files to uderstand which is the structure that you have to strictly follow.
+We also have type-definition files located at `packages/types/src/json/`. We are uring [zod](https://github.com/colinhacks/zod) for the schema validation. Take a look at these files to uderstand which is the structure that you have to strictly follow.
 
 Last but not least, we have a script `npm-prebuild.js` that auto-generates the `organization.json` file by reading all the information directly from your Organization, so you don't need to manually write that json file.
 
 When you have done with all the changes you can run `npm run test:data` to check if everything is correct.
 
 
+### Locale data files
+
+Demo Store is a multi-language website. When you built your data in the previous step, probably you noticed that some fields were localized.
+
+You can add new languages or change existing translations.
+
+Locale json files are located at `data/locales/`, but you can choose a different position by changing the environment variable `NEXT_PUBLIC_LOCALES_DATA_FOLDER`.
+
+Do the following to start customizing the locales:
+
+```sh
+cp -r ./demo-store-core/packages/website/data/locales ./data/locales
+```
+
+```properties
+# .env.local
+NEXT_PUBLIC_LOCALES_DATA_FOLDER=../../../data/locales/
+```
+
+
+### Config
+
+Configuration files are located at `config/`, but you can choose a different position by changing the environment variable `NEXT_PUBLIC_LOCALES_DATA_FOLDER`.
+
+There are 3 configuration files that you can manage:
+
+* `general.config.js`
+* `facets.config.js`
+* `variants.config.js`
+
+Do the following to start customizing the configuration:
+
+```sh
+cp -r ./demo-store-core/packages/website/config ./config
+```
+
+```properties
+# .env.local
+NEXT_PUBLIC_CONFIG_FOLDER=../../../config/
+```
+
+### Environment Variables
+
+There are some enviroment variables that you can use to customize the Demo Store. For an exaustive description you can take a look at [additional-env.d.ts](https://github.com/commercelayer/demo-store-core/blob/master/packages/website/additional-env.d.ts) file.
+
+
 ## Troubleshooting
 
-1. **Q.** Even if I changed `NEXT_PUBLIC_JSON_DATA_FOLDER` or `NEXT_PUBLIC_LOCALE_DATA_FOLDER`, the website is still refering to previous json files.
+1. **Q.** Even if I changed `NEXT_PUBLIC_JSON_DATA_FOLDER`, `NEXT_PUBLIC_LOCALE_DATA_FOLDER` or `NEXT_PUBLIC_CONFIG_FOLDER`, the website is still refering to previous files.
 
-    **A.** These two env variables reflect as `alias` for Webpack. Starting from Webpack 5, it introduced caching for faster builds. Changing these two env variables will not invalidate the Webpack cache. You should remove `.next` folder manually.
+    **A.** These environment variables reflect as `alias` for Webpack. Starting from Webpack 5, it introduced caching for faster builds. Changing these environment variables will not invalidate the Webpack cache. You have to remove `.next` folder manually or by running:
+
+    ```sh
+    # update the path if needed
+    rm -rf demo-store-core/packages/website/.next/
+    ```

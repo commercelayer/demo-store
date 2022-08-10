@@ -9,5 +9,8 @@
     "local:serve": "env $(awk 'NF > 0 && !/^#/ { print $0 }' .env.local | xargs) npm run local:serve -ws --if-present",
     "test:data": "env $(awk 'NF > 0 && !/^#/ { print $0 }' .env.local | xargs) npm run test:data -ws --if-present"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "@commercelayer/demo-store-types": "^0.0.0"
+  }
 }
