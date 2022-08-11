@@ -19,7 +19,7 @@ Demo Store comes with:
 - [x] product variants
 - [x] integration with Commerce Layer (of course) using:
   - [x] [React Components](https://github.com/commercelayer/commercelayer-react-components)
-  - [x] [Hosted Cart](https://github.com/commercelayer/commercelayer-cart)
+  - [x] *embedded* [Hosted Cart](https://github.com/commercelayer/commercelayer-cart)
   - [x] [Hosted Checkout](https://github.com/commercelayer/commercelayer-react-checkout)
 
 ## Getting started
@@ -66,14 +66,14 @@ We have two repositories:
 
 * **[`demo-store-core`](https://github.com/commercelayer/demo-store-core)** contains the source code.
 
-  You just have to fork this repository and create your own starting from here. In this way you can fully customize all the aspects (behaviour, ui, ux), but *you will possibly loose all future updates if you start diverging too much.*
+  You just have to fork this repository and create your own starting from here. In this way you can fully customize all the aspects (behaviour, ui, ux), but *you will possibly loose all future updates if you start diverging too much.* This is also the way to contribute.
 
 Let's get started!
 
 First of all you'll need to create a new repository starting from the `demo-store` template. Click on `Use this template` from the [repository homepage](https://github.com/commercelayer/demo-store) on GitHub and the run:
 
 ```sh
-git clone <your-repository> my-new-project
+git clone <your-repository-url> my-new-project
 cd my-new-project
 git submodule update --init
 npm install
@@ -82,6 +82,15 @@ cp ./demo-store-core/packages/website/.env.sample.submodule .env.local
 
 cp -r ./demo-store-core/packages/website/data/json ./data/json
 ```
+
+> **alternatively** if you decided to go with forking the repository [`demo-store-core`](https://github.com/commercelayer/demo-store-core) you can run instead:
+> ```sh
+> git clone <your-repository-url> my-new-project
+> cd my-new-project
+> npm install
+> 
+> cp ./packages/website/.env.sample .env.local
+> ```
 
 ### Environment Variables
 
@@ -196,6 +205,12 @@ NEXT_PUBLIC_CONFIG_FOLDER=../../../config/
 ### Environment Variables
 
 There are some enviroment variables that you can use to customize the Demo Store. For an exaustive description you can take a look at [additional-env.d.ts](https://github.com/commercelayer/demo-store-core/blob/master/packages/website/additional-env.d.ts) file.
+
+## Need help?
+
+* Join [Commerce Layer's Slack community](https://slack.commercelayer.app).
+* Create an [issue](https://github.com/commercelayer/demo-store/issues) in this repository.
+* Ping us [on Twitter](https://twitter.com/commercelayer).
 
 
 ## Troubleshooting
