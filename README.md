@@ -10,7 +10,7 @@ Demo Store is a fully static e-commerce solution (with SSR capability) that uses
 
 We decided to build the Demo Store, removing all 3rd party services that are usually used to create a full experience of an e-commerce website (cms, search, pim, etc.).
 
-Everything related to `content` is stored as JSON files and, building you own Demo Store, you will need to create these files, manually or via scripts.
+Everything related to `content` is stored as JSON files and, building your own Demo Store, you will need to create these files manually or via scripts.
 
 Demo Store comes with:
 
@@ -18,9 +18,9 @@ Demo Store comes with:
 - [x] product catalog management with taxonomies and taxons
 - [x] product variants
 - [x] integration with Commerce Layer (of course) using:
-  - [x] [react-component](https://github.com/commercelayer/commercelayer-react-components)
-  - [x] [hosted cart](https://github.com/commercelayer/commercelayer-cart)
-  - [x] [hosted checkout](https://github.com/commercelayer/commercelayer-react-checkout)
+  - [x] [React Components](https://github.com/commercelayer/commercelayer-react-components)
+  - [x] [Hosted Cart](https://github.com/commercelayer/commercelayer-cart)
+  - [x] [Hosted Checkout](https://github.com/commercelayer/commercelayer-react-checkout)
 
 ## Getting started
 
@@ -55,10 +55,6 @@ commercelayer applications:login \
 
 We have two repositories:
 
-* **[`demo-store-core`](https://github.com/commercelayer/demo-store-core)** contains the source code.
-
-  You just have to fork this repository and create your own starting from here. In this way you can fully customize all the aspects (behaviour, ui, ux), but *you will possibly loose all future updates if you start diverging to much.*
-
 * **[`demo-store`](https://github.com/commercelayer/demo-store) GitHub template**.
 
     This template is using the `demo-store-core` as a [git submodule](https://git-scm.com/book/en/v2/Git-Tools-Submodules).  
@@ -68,9 +64,13 @@ We have two repositories:
     git submodule update --remote
     ```
 
+* **[`demo-store-core`](https://github.com/commercelayer/demo-store-core)** contains the source code.
+
+  You just have to fork this repository and create your own starting from here. In this way you can fully customize all the aspects (behaviour, ui, ux), but *you will possibly loose all future updates if you start diverging too much.*
+
 Let's get started!
 
-First of all you'll need to create a new repository starting from the `demo-store` template. Click on `Use this template` from the repository homepage on GitHub and the run:
+First of all you'll need to create a new repository starting from the `demo-store` template. Click on `Use this template` from the [repository homepage](https://github.com/commercelayer/demo-store) on GitHub and the run:
 
 ```sh
 git clone <your-repository> my-new-project
@@ -135,15 +135,13 @@ You can customize three aspects of the Demo Store: content data, locales and con
 
 ### JSON data files
 
-As mentioned earlier, the Demo Store is built around a set of data that are stored as json files. This decision has been taken to decouple the Demo Store from any 3rd party services.
+As mentioned earlier, the Demo Store is built around a set of data that are stored as JSON files. This decision has been taken to decouple the Demo Store from any 3rd party services.
 
-To build your own Demo Store you'll have to create and manage these json data files.
+To build your own Demo Store you'll have to create and manage these JSON data files.
 
-Json files are located at `data/json/`, but you can choose a different position by changing the environment variable `NEXT_PUBLIC_JSON_DATA_FOLDER`.
+JSON files are located at `data/json/`, but you can choose a different position by changing the environment variable `NEXT_PUBLIC_JSON_DATA_FOLDER`.
 
 We also have type-definition files located at `packages/types/src/json/`. We are uring [zod](https://github.com/colinhacks/zod) for the schema validation. Take a look at these files to uderstand which is the structure that you have to strictly follow.
-
-Last but not least, we have a script `npm-prebuild.js` that auto-generates the `organization.json` file by reading all the information directly from your Organization, so you don't need to manually write that json file.
 
 When you have done with all the changes you can run `npm run test:data` to check if everything is correct.
 
@@ -154,7 +152,7 @@ Demo Store is a multi-language website. When you built your data in the previous
 
 You can add new languages or change existing translations.
 
-Locale json files are located at `data/locales/`, but you can choose a different position by changing the environment variable `NEXT_PUBLIC_LOCALES_DATA_FOLDER`.
+Locale JSON files are located at `data/locales/`, but you can choose a different position by changing the environment variable `NEXT_PUBLIC_LOCALES_DATA_FOLDER`.
 
 Do the following to start customizing the locales:
 
@@ -175,8 +173,14 @@ Configuration files are located at `config/`, but you can choose a different pos
 There are 3 configuration files that you can manage:
 
 * `general.config.js`
-* `facets.config.js`
-* `variants.config.js`
+
+* `facets.config.js`  
+  This is the facets configuration file. You can choose the order in which they appear in the filter panel, the appearance and the sorting rules of their values.  
+  <img width="400" alt="demo-store-facets" src="https://user-images.githubusercontent.com/1681269/184152000-2163e484-d4bd-441a-b3cb-20c3b03b875a.png">
+
+* `variants.config.js`  
+  This is the variants configuration file. You can choose the order in which they appear in the product detail page and the appearance.  
+  <img width="180" alt="demo-store-product-variants" src="https://user-images.githubusercontent.com/1681269/184152670-bdd5ea2b-d30f-42e8-b5a7-6c541396cd90.png">
 
 Do the following to start customizing the configuration:
 
