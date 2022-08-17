@@ -1,38 +1,73 @@
-# Demo Store by Commerce Layer
+# Commerce Layer Demo Store
 
-Demo Store is a fully static e-commerce solution (with SSR capability) that uses Commerce Layer. Keep reading to tailor your own.
+This Demo Store is a completely static ecommerce solution (with SSR capability) that uses Commerce Layer as the commerce engine. The store is [full-featured](#features) and fully operational, with no third-party services required. You can easily tailor your own with different levels of customization. Keep reading to learn more.
+
+The Demo Store project consists of [two repositories](#how-it-works), this one is the GitHub template.
 
 ## What is Commerce Layer?
 
 [Commerce Layer](https://commercelayer.io/) is a multi-market commerce API and order management system that lets you add global shopping capabilities to any website, mobile app, chatbot, wearable, voice, or IoT device, with ease. Compose your stack with the best-of-breed tools you already mastered and love. Make any experience shoppable, anywhere, through a blazing-fast, enterprise-grade, and secure API.
 
-## :battery: Batteries included
+## Table of contents
 
-We decided to build the Demo Store, removing all third-party services that are usually used to create a full experience of an e-commerce website (cms, search, PIM, etc.).
+- [Features](#features)
+- [How it works](#how-it-works)
+- [Getting started](#getting-started)
+- [Customization](#customization)
+- [Need help?](#need-help)
+- [Troubleshooting](#troubleshooting)
 
-Everything related to `content` is stored as JSON files. Building your own Demo Store, you will need to create these files manually or via scripts.
+## Features
 
-Demo Store comes with:
+We decided to build the Demo Store removing all third-party services that are usually used to create a comprehensive ecommerce website experience (CMS, search, PIM, etc.).
 
-- [x] built-in search engine with facet search powered by [fuse.js](https://github.com/krisk/Fuse)
-- [x] product catalog management with taxonomies and taxons
-- [x] product variants
-- [x] integration with Commerce Layer (of course) using:
-  - [x] [React Components](https://github.com/commercelayer/commercelayer-react-components)
-  - [x] *embedded* [Hosted Cart](https://github.com/commercelayer/commercelayer-cart)
-  - [x] [Hosted Checkout](https://github.com/commercelayer/commercelayer-react-checkout)
+Everything related to [content](https://commercelayer.io/docs/core-concepts/content-vs-commerce) is stored as JSON files. To build your own Demo Store you will need to create these files manually or via scripts.
+
+The Demo Store comes with:
+
+- [x] a built-in search engine with facet search powered by [fuse.js](https://github.com/krisk/Fuse)
+- [x] a full product catalog management with taxonomies and taxons
+- [x] single product variants management
+- [x] multi-language capabilities to make selling internationally easier
+- [x] the whole extensive set of features provided out of the box by Commerce Layer APIs (multiple currency price lists, inventory models that support multiple stock locations and fulfillment strategies, market-specific payment gateways, delivery options and carrier accounts, etc.)
+
+The integration with Commerce Layer is achieved by leveraging some of our open-source [developer tools](https://commercelayer.io/developers), specifically:
+
+- the [React components](https://github.com/commercelayer/commercelayer-react-components)
+- the embedded version of our [Hosted cart](https://github.com/commercelayer/commercelayer-cart#embedding-the-cart)
+- the [Hosted checkout](https://github.com/commercelayer/commercelayer-react-checkout)
+
+## How it works
+
+The Demo Store project consists of two repositories that you can leverage to build your own store, based on the amount of customization you need to add:
+
+- **[`demo-store`](https://github.com/commercelayer/demo-store)**
+
+  This is a **GitHub template** that uses the below-mentioned `demo-store-core` as a [git submodule](https://git-scm.com/book/en/v2/Git-Tools-Submodules). If you're happy with the features and the look and feel of the Commerce Layer Demo Store we suggest you follow this path. You won't have to care about the whole source code and you'll be free to focus just on [your data and content](#customization). On top of that, you'll get free updates with almost no risk just by running:
+
+  ```sh
+  git submodule update --remote
+  ```
+
+- **[`demo-store-core`](https://github.com/commercelayer/demo-store-core)**
+
+  This repository contains the source code. If you need to fully customize your store (behavior, UI, UX, etc.) you just have to fork this repo and create your own. **This is also the way to contribute.**
+
+  > :warning: Please note that if you follow this path and start diverging too much from the original source code the risk is to lose all future updates or not be able to replicate them.
 
 ## Getting started
 
-If you have no experience with Commerce Layer, go [here](https://docs.commercelayer.io/developers/) and start the tutorial. To set up a Demo Store you need a configured Organization with at least a few products and one market.
+If you have no experience with Commerce Layer, you can start by creating an account (it's free!) and following the [onboarding tutorial](https://docs.commercelayer.io/developers/welcome/onboarding-tutorial).
 
-If you prefer to start from scratch, you can create a new Organization and use the following commands to configure a `Commerce Layer's Demo Store`-like project.
+> :information_source: Please note that to set up a Demo Store you need a properly configured organization with at least a few products and one market.
 
-### Organization
+If you prefer to start from scratch, you can create a new organization and use the following commands to configure a Commerce Layer's Demo Store-like project.
 
-Once the Organization is created, you need to create two [API clients](https://docs.commercelayer.io/developers/api-clients): one `Sales channel` and one `Integration`.
+### Setting up your organization
 
-If you haven't yet, install our [Commerce Layer CLI](https://www.npmjs.com/package/@commercelayer/cli), the [seeder plugin](https://www.npmjs.com/package/@commercelayer/cli-plugin-seeder) and the [imports plugin](https://www.npmjs.com/package/@commercelayer/cli-plugin-imports):
+Once the organization is created, you need to create two [API clients](https://docs.commercelayer.io/developers/api-clients): a **sales channel** and an **integration**.
+
+If you haven't yet, install the [Commerce Layer CLI](https://github.com/commercelayer/commercelayer-cli) and two of its plugins: the [seeder plugin](https://github.com/commercelayer/commercelayer-cli-plugin-seeder) and the [imports plugin](https://github.com/commercelayer/commercelayer-cli-plugin-imports):
 
 ```sh
 npm install -g @commercelayer/cli
@@ -41,7 +76,7 @@ commercelayer plugins:install seeder
 commercelayer plugins:install imports
 ```
 
-Now you can log in to your `Integration` API client from the CLI:
+Now you can log in to your integration API client from the CLI:
 
 ```sh
 commercelayer applications:login \
@@ -51,52 +86,40 @@ commercelayer applications:login \
   --alias cli-admin
 ```
 
-### Demo Store
+### Building your store
 
-We have two repositories:
+Once your organization is set up, to build you store you need to follow some simple steps... let's get started!
 
-* **[`demo-store`](https://github.com/commercelayer/demo-store) GitHub template**.
+#### 1. Create a new repository
 
-    This template is using the `demo-store-core` as a [git submodule](https://git-scm.com/book/en/v2/Git-Tools-Submodules).  
-    You don't have to care about the whole source code, *you can focus on your data*. You'll have free updates with almost no risk just by running:
+Whichever [path](#how-it-works) you choose, first of all, you need to create a new repository for your store:
 
-    ```sh
-    git submodule update --remote
-    ```
+- If you decided to keep the `demo-store` template you just need to click on the "Use this template" from the [repository homepage](https://github.com/commercelayer/demo-store) on GitHub and then run:
 
-* **[`demo-store-core`](https://github.com/commercelayer/demo-store-core)** contains the source code.
+  ```sh
+  git clone <your-repository-url> my-new-project
+  cd my-new-project
+  git submodule update --init
+  npm install
 
-  You just have to fork this repository and create your own, starting from here. This is also the way to contribute.  
-  You can fully customize all aspects (behavior, UI, UX), but *you risk losing all future updates* if you start diverging too much.
+  cp ./demo-store-core/packages/website/.env.sample.submodule .env.local
 
-Let's get started!
+  cp -r ./demo-store-core/packages/website/data/json ./data/json
+  ```
 
-First of all, you'll need to create a new repository starting from the `demo-store` template.  
-Click on `Use this template` from the [repository homepage](https://github.com/commercelayer/demo-store) on GitHub and then run:
+- If you decided to fork the `demo-store-core` [repository](https://github.com/commercelayer/demo-store-core) you can run this instead:
 
-```sh
-git clone <your-repository-url> my-new-project
-cd my-new-project
-git submodule update --init
-npm install
+  ```sh
+  git clone <your-repository-url> my-new-project
+  cd my-new-project
+  npm install
 
-cp ./demo-store-core/packages/website/.env.sample.submodule .env.local
+  cp ./packages/website/.env.sample .env.local
+  ```
 
-cp -r ./demo-store-core/packages/website/data/json ./data/json
-```
+#### 2. Set the environment variables
 
-> **alternatively** if you decided to go with forking the repository [`demo-store-core`](https://github.com/commercelayer/demo-store-core) you can run this instead:
-> ```sh
-> git clone <your-repository-url> my-new-project
-> cd my-new-project
-> npm install
-> 
-> cp ./packages/website/.env.sample .env.local
-> ```
-
-### Environment Variables
-
-Edit `.env.local` and fill in all missing information:
+Edit `.env.local` and fill in all the missing information:
 
 ```properties
 # this is the 'sales channel' client id
@@ -106,30 +129,25 @@ NEXT_PUBLIC_CL_CLIENT_ID=er34TWFcd24RFI8KJ52Ws6q...
 NEXT_PUBLIC_CL_ENDPOINT=https://my-awesome-organization.commercelayer.io
 ```
 
-### Seed
+#### 3. Seed the data
 
-The following script will populate your organization with all resources for multi-market e-commerce. These are the ones we are using for our [Demo Store](https://commercelayer.github.io/demo-store-core).
-
-This step is *optional*. If you already have a well-configured organization, you can skip it.
+The following script will populate your organization with all the resources you need to build a multi-market ecommerce with Commerce Layer (the ones we are using for our [Demo Store](https://commercelayer.github.io/demo-store-core)).
 
 ```sh
 npm run seeder:seed -ws --if-present
 ```
 
-### countries.json
+> This step is optional. If you already have a properly configured organization on your Commerce Layer account, you can skip it.
 
-Edit `json/countries.json` with your preferred editor.
+#### 4. Choose the countries where you're going to sell
 
-Here you have a list of available countries for your e-commerce.
-
-You have to replace all findings of `"market": xxx` with the related markets of your organization.  
-To get the list of your markets you can connect to the Commerce Layer dashboard or by running this command:
+The `json/countries.json` file contains a list of available countries for your ecommerce. You can change it with your preferred editor. Just make sure to replace all findings of `"market": xxx` with the related markets of your organization. You can get the list of your markets from the Commerce Layer admin dashboard or by running this command:
 
 ```sh
 npm run markets -ws --if-present
 ```
 
-### Enjoy :rocket:
+#### 5. See it in action :rocket:
 
 ```sh
 npm run dev
@@ -139,29 +157,27 @@ npm run dev
 
 ## Customization
 
-You can customize three aspects of Demo Store: content data, locales and configuration files.
+When you're using our Demo Store template can customize three main elements: content data, locales, and configuration files.
 
-> :warning:  _Demo Store is continuously improving to provide new features.  
-> When you update to the latest release, the build could fail. Take a look at the release notes to understand how to fix it by updating your customized files._
+> :warning:  We're going to continuously improve our Demo Store to add new features and optimize the existing ones. When you update to the latest release, the build could fail. Take a look at the release notes to understand how to fix it by updating your customized files.
 
 ### JSON data files
 
-As mentioned earlier, Demo Store is built around a set of data that are stored as JSON files, to decouple the Demo Store from any third-party services.
-
-To build your Demo Store you'll have to create and manage these JSON data files.
+As mentioned earlier, our Demo Store is built around a set of data that are stored as JSON files, to decouple it from any third-party services. To build your store you'll have to create and manage these files.
 
 JSON files are located at `data/json/`, but you can choose a different position by changing the environment variable `NEXT_PUBLIC_JSON_DATA_FOLDER`.
 
-We also have type-definition files located at `packages/types/src/json/`. We are using [zod](https://github.com/colinhacks/zod) for schema validation. Take a look at these files to understand which structure you have to follow.
+Type-definition files are located at `packages/types/src/json/`. We are using [zod](https://github.com/colinhacks/zod) for schema validation. Take a look at these files to understand which structure you have to follow.
 
-When you are done with all the changes you can run `npm run test:data` to check if everything is correct.
+When you are done with all the changes you can check if everything is correct by running:
 
+```
+npm run test:data
+```
 
 ### Locale data files
 
-Demo Store is a multi-language website. When you built your data in the previous step, you probably noticed that some fields were localized.
-
-You can add new languages or change existing translations.
+Our Demo Store is a multi-language website. When you built your data in the previous step, you probably noticed that some fields were localized. You can add new languages or change existing translations.
 
 Locale JSON files are located at `data/locales/`, but you can choose a different position by changing the environment variable `NEXT_PUBLIC_LOCALES_DATA_FOLDER`.
 
@@ -176,22 +192,21 @@ cp -r ./demo-store-core/packages/website/data/locales ./data/locales
 NEXT_PUBLIC_LOCALES_DATA_FOLDER=../../../data/locales/
 ```
 
-
-### Config
+### Configuration files
 
 Configuration files are located at `config/`, but you can choose a different position by changing the environment variable `NEXT_PUBLIC_LOCALES_DATA_FOLDER`.
 
 There are three configuration files that you can manage:
 
-* `general.config.js`  
-  Which contains the general configuration.
+- `general.config.js`  
+  This file contains the general configuration.
 
-* `facets.config.js`  
-  This is the facets configuration file. You can choose the order in which they appear in the filter panel, the appearance and the sorting rules of their values.  
+- `facets.config.js`  
+  This is the facets configuration file. You can choose the order in which they are displayed in the filter panel, their appearance, and the sorting rules of their values.  
   <img width="400" alt="demo-store-facets" src="https://user-images.githubusercontent.com/1681269/184152000-2163e484-d4bd-441a-b3cb-20c3b03b875a.png">
 
-* `variants.config.js`  
-  This is the variants configuration file. You can choose the order in which they appear in the product detail page and their appearance.  
+- `variants.config.js`  
+  This is the variants configuration file. You can choose the order in which they are displayed on the product detail page and their appearance.  
   <img width="180" alt="demo-store-product-variants" src="https://user-images.githubusercontent.com/1681269/184152670-bdd5ea2b-d30f-42e8-b5a7-6c541396cd90.png">
 
 Do as follows to start customizing the configuration:
@@ -205,25 +220,24 @@ cp -r ./demo-store-core/packages/website/config ./config
 NEXT_PUBLIC_CONFIG_FOLDER=../../../config/
 ```
 
-### Environment Variables
+### Additional environment variables
 
-There are some environment variables that you can use to customize Demo Store. For an exhaustive description you can take a look at [additional-env.d.ts](https://github.com/commercelayer/demo-store-core/blob/master/packages/website/additional-env.d.ts) file.
+There are some environment variables that you can use to customize your store. For an exhaustive list and description, you can take a look at [additional-env.d.ts](https://github.com/commercelayer/demo-store-core/blob/master/packages/website/additional-env.d.ts) file.
 
 ## Need help?
 
-* Join [Commerce Layer's Slack community](https://slack.commercelayer.app).
-* Open a new [Q&A discussion](https://github.com/commercelayer/demo-store-core/discussions/categories/q-a)
-* Ping us [on Twitter](https://twitter.com/commercelayer).
-* Is there a bug? Create an [issue](https://github.com/commercelayer/demo-store-core/issues) on this repository.
-
+- Join [Commerce Layer's Slack community](https://slack.commercelayer.app).
+- Open a new [Q&A discussion](https://github.com/commercelayer/demo-store-core/discussions/categories/q-a)
+- Ping us [on Twitter](https://twitter.com/commercelayer).
+- Is there a bug? Create an [issue](https://github.com/commercelayer/demo-store-core/issues) on this repository.
 
 ## Troubleshooting
 
 1. **Q.** Even if I changed `NEXT_PUBLIC_JSON_DATA_FOLDER`, `NEXT_PUBLIC_LOCALE_DATA_FOLDER` or `NEXT_PUBLIC_CONFIG_FOLDER`, the website is still referring to previous files.
 
-    **A.** These environment variables are used as `alias` in Webpack. Starting from Webpack 5, it introduced caching for faster builds. Changing these environment variables will not invalidate the Webpack cache. You have to remove `.next` folder manually or by running:
+   **A.** These environment variables are used as `alias` in Webpack. Starting from Webpack 5, caching for faster builds has been introduced. Changing these environment variables will not invalidate the Webpack cache. You have to remove `.next` folder manually or by running:
 
-    ```sh
-    # update the path if needed
-    rm -rf demo-store-core/packages/website/.next/
-    ```
+   ```sh
+   # update the path if needed
+   rm -rf demo-store-core/packages/website/.next/
+   ```
