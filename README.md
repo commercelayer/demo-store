@@ -2,7 +2,7 @@
 
 This Demo Store is a completely static ecommerce solution (with SSR capability) that uses Commerce Layer as the commerce engine. The store is [full-featured](#features) and fully operational, with no third-party services required. You can easily tailor your own with different levels of customization. Keep reading to learn more.
 
-The Demo Store project consists of [two repositories](#how-it-works), this one is the GitHub template.
+> The Demo Store project consists of [two repositories](#how-it-works), this one is the GitHub template.
 
 ## What is Commerce Layer?
 
@@ -16,6 +16,7 @@ The Demo Store project consists of [two repositories](#how-it-works), this one i
 - [Customization](#customization)
 - [Need help?](#need-help)
 - [Troubleshooting](#troubleshooting)
+- [License](#license)
 
 ## Features
 
@@ -241,3 +242,7 @@ There are some environment variables that you can use to customize your store. F
    # update the path if needed
    rm -rf demo-store-core/packages/website/.next/
    ```
+
+## License
+
+This repository is published under the [MIT](LICENSE) license.
