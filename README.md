@@ -41,7 +41,7 @@ The integration with Commerce Layer is achieved by leveraging some of our open-s
 
 The Demo Store project consists of two repositories that you can leverage to build your own store, based on the amount of customization you need to add:
 
-- **[`demo-store`](https://github.com/commercelayer/demo-store)**
+- [`demo-store`](https://github.com/commercelayer/demo-store)
 
   This is a **GitHub template** that uses the below-mentioned `demo-store-core` as a [git submodule](https://git-scm.com/book/en/v2/Git-Tools-Submodules). If you're happy with the features and the look and feel of the Commerce Layer Demo Store we suggest you follow this path. You won't have to care about the whole source code and you'll be free to focus just on [your data and content](#customization). On top of that, you'll get free updates with almost no risk just by running:
 
@@ -49,7 +49,7 @@ The Demo Store project consists of two repositories that you can leverage to bui
   git submodule update --remote
   ```
 
-- **[`demo-store-core`](https://github.com/commercelayer/demo-store-core)**
+- [`demo-store-core`](https://github.com/commercelayer/demo-store-core)
 
   This repository contains the source code. If you need to fully customize your store (behavior, UI, UX, etc.) you just have to fork this repo and create your own. **This is also the way to contribute.**
 
@@ -137,7 +137,7 @@ The following script will populate your organization with all the resources you 
 npm run seeder:seed -ws --if-present
 ```
 
-> This step is optional. If you already have a properly configured organization on your Commerce Layer account, you can skip it.
+> :information_source: This step is optional. If you already have a properly configured organization on your Commerce Layer account, you can skip it.
 
 #### 4. Choose the countries where you're going to sell
 
