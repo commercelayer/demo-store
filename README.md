@@ -1,6 +1,6 @@
 # Commerce Layer Demo Store
 
-This Demo Store is a completely static ecommerce solution (with SSR capability) that uses Commerce Layer as the commerce engine. The store is [full-featured](#features) and fully operational, with no third-party services required. You can easily tailor your own with different levels of customization. Keep reading to learn more.
+This Demo Store is a completely static ecommerce solution (with SSR capability) powered by Commerce Layer. The store is [full-featured](#features) and fully operational, with no third-party services required. You can easily tailor your own with different levels of customization. Keep reading to learn more.
 
 > The Demo Store project consists of [two repositories](#how-it-works), this one is the GitHub template.
 
@@ -158,7 +158,7 @@ npm run dev
 
 ## Customization
 
-When you're using our Demo Store template can customize three main elements: content data, locales, and configuration files.
+When you're using our Demo Store template you can customize three main elements: content data, locales, and configuration files.
 
 > :warning:  We're going to continuously improve our Demo Store to add new features and optimize the existing ones. When you update to the latest release, the build could fail. Take a look at the release notes to understand how to fix it by updating your customized files.
 
