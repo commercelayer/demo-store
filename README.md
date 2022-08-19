@@ -14,6 +14,7 @@ This Demo Store is a completely static ecommerce solution (with SSR capability) 
 - [How it works](#how-it-works)
 - [Getting started](#getting-started)
 - [Customization](#customization)
+- [Deploy](#deploy)
 - [Need help?](#need-help)
 - [Troubleshooting](#troubleshooting)
 - [License](#license)
@@ -224,6 +225,27 @@ NEXT_PUBLIC_CONFIG_FOLDER=../../../config/
 ### Additional environment variables
 
 There are some environment variables that you can use to customize your store. For an exhaustive list and description, you can take a look at [additional-env.d.ts](https://github.com/commercelayer/demo-store-core/blob/master/packages/website/additional-env.d.ts) file.
+
+## Deploy
+
+### GitHub Pages
+
+Configuring GitHub Pages is straightforward. We already created a workflow that can be triggered manually.
+
+You just have to review [`gh-pages.yml`](.github/workflows/gh-pages.yml) by updating the environment variables as you need and create two [secrets](https://docs.github.com/en/actions/security-guides/encrypted-secrets#creating-encrypted-secrets-for-a-repository) in your repository.
+
+<img width="640" alt="Repository secrets" src="https://user-images.githubusercontent.com/1681269/185638408-f5c68563-1197-436c-a2b0-9aaf0dfbc16a.png">
+
+Now you should be able to run the workflow. This will build your Demo Store statically and deploy the artifact to a `gh-pages` branch.
+
+![Run workflow](https://user-images.githubusercontent.com/1681269/185639837-5b81186b-f5e7-43cd-bf7a-1c00f3b71b58.png)
+
+Lastly you have to [configure a publishing source](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site#publishing-from-a-branch) for your GitHub Pages site.
+
+Feel free to update the workflow according to your needs. You can trigger the deploy with every git-push or change the `deploy` step, e.g. by publishing the artifact somewhere else (AWS S3, Netlify, etc.).
+
+> :warning:
+> _GitHub Pages is not intended for or allowed to be used as a free web-hosting service to run your online business, e-commerce site, or any other website that is primarily directed at either facilitating commercial transactions [...]_ ( [prohibited-uses](https://docs.github.com/en/pages/getting-started-with-github-pages/about-github-pages#prohibited-uses) )
 
 ## Need help?
 
