@@ -247,6 +247,32 @@ Feel free to update the workflow according to your needs. You can trigger the de
 > :warning:
 > _GitHub Pages is not intended for or allowed to be used as a free web-hosting service to run your online business, e-commerce site, or any other website that is primarily directed at either facilitating commercial transactions [...]_ ( [prohibited-uses](https://docs.github.com/en/pages/getting-started-with-github-pages/about-github-pages#prohibited-uses) )
 
+
+### Netlify
+
+The Demo Store is SSG first and foremost, but you can switch to SSR very quickly.
+
+Inside the project root you can find two files [netlify.ssg.toml](netlify.ssg.toml) and [netlify.ssr.toml](netlify.ssr.toml).
+Rename one of these into `netlify.toml` and update the `[build.environment]` section with the environment variables as you need.
+
+From you Netlify Dashboard, click on `Add new site -> Import an existing project` and then select the repository.
+
+At this point you should have some field already filled-in. Click on `Show advanced` and add the missing environment variables `SITE_URL`, `NEXT_PUBLIC_CL_CLIENT_ID` and `NEXT_PUBLIC_CL_ENDPOINT`.
+
+> :information_source:
+> Regarding the `SITE_URL` you cannot know yet which will be the url since Netlify will create a random site name after the first deploy.
+
+<img width="500" alt="image" src="https://user-images.githubusercontent.com/1681269/185694384-235c2ead-49cf-46ea-a19c-8266ce74e366.png">
+
+Click on `Deploy site`.
+
+We suggest to stop the first auto-deploy by clicking on `Cancel deploy` because you can update the `SITE_URL` with the correct information first.
+
+You can also speed up the deploy by [disabling `form detection`](https://docs.netlify.com/site-deploys/post-processing/form-detection/). We don't have form managed by Netlify, so you can securely disable it.
+
+Now you can trigger a new deploy and .. voilà, site will be up and running :rocket:
+
+
 ## Need help?
 
 - Join [Commerce Layer's Slack community](https://slack.commercelayer.app).
