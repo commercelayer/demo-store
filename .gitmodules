@@ -1,3 +1,3 @@
 [submodule "demo-store-core"]
   path = demo-store-core
-  url = git@github.com:commercelayer/demo-store-core.git
+  url = https://github.com/commercelayer/demo-store-core.git
