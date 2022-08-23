@@ -25,7 +25,7 @@ Feel free to update the workflow according to your needs. You can trigger the de
 Inside the project root you can find two files [netlify.ssg.toml](netlify.ssg.toml) (for static site generation) and [netlify.ssr.toml](netlify.ssr.toml) (for server-side rendering).
 Rename one of these into `netlify.toml` and update the `[build.environment]` section with the environment variables as you need.
 
-From you Netlify Dashboard, click on `Add new site -> Import an existing project` and then select the repository.
+From your Netlify dashboard, click on `Add new site -> Import an existing project` and then select the repository.
 
 At this point you should have some field already filled-in. Click on `Show advanced` and add the missing environment variables `SITE_URL`, `NEXT_PUBLIC_CL_CLIENT_ID` and `NEXT_PUBLIC_CL_ENDPOINT`.
 
@@ -41,3 +41,21 @@ We suggest to stop the first auto-deploy by clicking on `Cancel deploy` because 
 You can also speed up the deploy by [disabling `form detection`](https://docs.netlify.com/site-deploys/post-processing/form-detection/). We don't have form managed by Netlify, so you can securely disable it.
 
 Now you can trigger a new deploy and .. voilà, site will be up and running :rocket:
+
+## Vercel
+
+From your Vercel dashboard, click on `Add New... -> Project` and then select the repository.
+
+You just need to fill-down all the required information as the below image and click on `Deploy`. In less than 2 minutes your e-commerce will be ready to be used.
+
+<img width="722" alt="Deploy the Demo Store SSR to Vercel" src="https://user-images.githubusercontent.com/1681269/186161145-5c9b8ebc-6fc2-4642-9fcc-f64adcd2e55e.png">
+
+> :information_source:
+> [`ENABLE_EXPERIMENTAL_COREPACK`](https://github.com/orgs/vercel/discussions/789) is necessary since the installed npm version used by Vercel does not run postinstall due to a bug.
+
+If you prefer a static site generation you just have to apply the following changes:
+
+1. framework preset: `Other`
+2. build command: `npm run export`
+3. output directory: `demo-store-core/packages/website/out`
+4. environment variable `NEXT_PUBLIC_DATA_FETCHING=ssg`
