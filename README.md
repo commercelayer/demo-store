@@ -96,7 +96,7 @@ Once your organization is set up, to build you store you need to follow some sim
 
 Whichever [path](#how-it-works) you choose, first of all, you need to create a new repository for your store:
 
-- If you decided to keep the `demo-store` template you just need to click on the "Use this template" from the [repository homepage](https://github.com/commercelayer/demo-store) on GitHub and then run:
+- If you decided to keep the `demo-store` template you just need to click on the _"Use this template"_ from the [repository homepage](https://github.com/commercelayer/demo-store) on GitHub and then run:
 
   ```sh
   git clone <your-repository-url> my-new-project
@@ -228,31 +228,38 @@ There are some environment variables that you can use to customize your store. F
 
 ## Deploy
 
-You can deploy the Demo Store anywhere!
+You can deploy the Demo Store wherever you prefer. You just need to:
 
-First of all you have to set all the environment variables in the system that you'll use to run the build, according to your needs.
+1. Set all the environment variables in the system that you'll use to run the build, according to your needs.
+2. Decide if you want to go with [static site generation](#static-site-generation) or [server-side rendering](#server-side-rendering).
 
-At this point you have to decide if you want to go with static site generation or server-side rendering. The Demo Store is SSG first and foremost, but you can switch to SSR very quickly.
+> :information_source: The Demo Store is designed to be SSG first and foremost, but you can switch to SSR in a snap. We tested some ways to deploy it (e.g. using GitHub Workflow, Netlify, Vercel, etc.) and you can find more information about it [here](DEPLOY.md). If you did it differently or used other services and you want to share the steps with the community, please [join the discussion](https://github.com/commercelayer/demo-store-core/discussions/new?category=show-and-tell), and thanks in advance!
 
-- **Static Site Generation**  
+### Static site generation
 
-  `npm run export` creates a statically optimized production build of your application.
+To build and deploy the Demo Store:
 
-  You just have to copy the folder `demo-store-core/packages/website/out` to you preferred static hosting and this is it.
+1. Set the following environment variable accordingly:
 
-  :information_source:  _set `NEXT_PUBLIC_DATA_FETCHING=ssg`_
+   ```properties
+   NEXT_PUBLIC_DATA_FETCHING=ssg
+   ```
 
+2. Run `npm run export` to create a statically optimized production build of your application.
+3. Copy the folder `demo-store-core/packages/website/out` to your preferred static hosting.
 
-- **Server-Side Rendering**
+### Server-side rendering
 
-  Demo Store can be deployed to any hosting provider that supports Node.js.
+The Demo Store can be deployed to any hosting provider that supports Node.js. To do that:
 
-  First run `npm run build` to create an optimized production build, then run `npm start` to start the Node.js server in production mode.
+1. Set the following environment variable accordingly:
 
-  :information_source:  _set `NEXT_PUBLIC_DATA_FETCHING=ssr`_
+   ```properties
+   NEXT_PUBLIC_DATA_FETCHING=ssr
+   ```
 
-
-We tested few ways to deploy the Demo Store and [here](DEPLOY.md) you can find them. If you've tested different ways to deploy it and you want to share them with the community [this is the way](https://github.com/commercelayer/demo-store-core/discussions/new?category=show-and-tell), and thanks!
+2. Run `npm run build` to create an optimized production build of your application.
+3. Run `npm start` to start the Node.js server in production mode.
 
 ## Need help?
 
