@@ -49,6 +49,7 @@ The Demo Store project consists of two repositories that you can leverage to bui
 
   ```sh
   git submodule update --remote
+  npm install
   ```
 
 - [`demo-store-core`](https://github.com/commercelayer/demo-store-core)
