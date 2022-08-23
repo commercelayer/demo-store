@@ -1,5 +1,5 @@
 [build]
-  command="npm run export -w demo-store-core/packages/website"
+  command="npm run export"
   publish="demo-store-core/packages/website/out"
 
 [build.processing]

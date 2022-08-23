@@ -7,7 +7,10 @@
   "scripts": {
     "dev": "env $(awk 'NF > 0 && !/^#/ { print $0 }' .env.local | xargs) npm run dev -ws --if-present",
     "local:serve": "env $(awk 'NF > 0 && !/^#/ { print $0 }' .env.local | xargs) npm run local:serve -ws --if-present",
-    "test:data": "env $(awk 'NF > 0 && !/^#/ { print $0 }' .env.local | xargs) npm run test:data -ws --if-present"
+    "test:data": "env $(awk 'NF > 0 && !/^#/ { print $0 }' .env.local | xargs) npm run test:data -ws --if-present",
+    "build": "npm run build -w demo-store-core/packages/website",
+    "export": "npm run export -w demo-store-core/packages/website",
+    "start": "npm run start -w demo-store-core/packages/website"
   },
   "license": "MIT",
   "dependencies": {
