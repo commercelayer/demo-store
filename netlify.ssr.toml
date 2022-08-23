@@ -1,0 +1,18 @@
+[build]
+  command="npm run build"
+  publish="demo-store-core/packages/website/.next"
+
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
+
+[build.processing]
+  skip_processing = true
+
+[build.environment]
+  NEXT_PUBLIC_JSON_DATA_FOLDER="../../../data/json/"
+  NEXT_PUBLIC_DATA_FETCHING="ssr"
+
+[template.environment]
+  SITE_URL="Base url of your website."
+  NEXT_PUBLIC_CL_CLIENT_ID="Commerce Layer Sales Channel Client ID."
+  NEXT_PUBLIC_CL_ENDPOINT="Commerce Layer Sales Channel Endpoint."
