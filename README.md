@@ -105,7 +105,7 @@ Whichever [path](#how-it-works) you choose, first of all, you need to create a n
   git submodule update --init
   npm install
 
-  cp ./demo-store-core/packages/website/.env.sample.submodule ./demo-store-core/packages/website/.env.local
+  cp ./demo-store-core/packages/website/.env.sample.submodule .env.local
 
   cp -r ./demo-store-core/packages/website/data/json ./data/json
   ```
@@ -117,7 +117,7 @@ Whichever [path](#how-it-works) you choose, first of all, you need to create a n
   cd my-new-project
   npm install
 
-  cp ./packages/website/.env.sample .env.local
+  cp ./packages/website/.env.sample ./demo-store-core/packages/website/.env.local
   ```
 
 #### 2. Set the environment variables
