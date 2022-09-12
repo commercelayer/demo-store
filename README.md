@@ -117,7 +117,7 @@ Whichever [path](#how-it-works) you choose, first of all, you need to create a n
   cd my-new-project
   npm install
 
-  cp ./packages/website/.env.sample ./demo-store-core/packages/website/.env.local
+  cp ./packages/website/.env.sample ./packages/website/.env.local
   ```
 
 #### 2. Set the environment variables
