@@ -197,7 +197,7 @@ NEXT_PUBLIC_LOCALES_DATA_FOLDER=../../../data/locales/
 
 ### Configuration files
 
-Configuration files are located at `config/`, but you can choose a different position by changing the environment variable `NEXT_PUBLIC_LOCALES_DATA_FOLDER`.
+Configuration files are located at `config/`, but you can choose a different position by changing the environment variable `NEXT_PUBLIC_CONFIG_FOLDER`.
 
 There are three configuration files that you can manage:
 
