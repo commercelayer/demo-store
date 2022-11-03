@@ -2,6 +2,15 @@ name: GitHub Pages
 
 on: workflow_dispatch
 
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
+
 jobs:
   test:
     runs-on: ubuntu-latest
@@ -32,7 +41,7 @@ jobs:
         NEXT_PUBLIC_JSON_DATA_FOLDER: ../../../data/json/
 
 
-  deploy:
+  build:
     needs: [test]
     runs-on: ubuntu-latest
 
@@ -45,13 +54,13 @@ jobs:
         submodules: recursive
 
     - name: Cache 💾 # https://nextjs.org/docs/messages/no-cache#github-actions
-      uses: actions/cache@v2
+      uses: actions/cache@v3
       with:
         path: |
           ~/.npm
           ${{ github.workspace }}/.next/cache
         # Generate a new cache whenever packages or source files change.
-        key: ${{ runner.os }}-nextjs-${{ hashFiles('**/package-lock.json') }}-${{ hashFiles('**.[jt]s', '**.[jt]sx') }}
+        key: ${{ runner.os }}-nextjs-${{ hashFiles('**/package-lock.json') }}-${{ hashFiles('**.[jt]s', '**.[jt]sx', '**.json') }}
         # If source files changed but packages didn't, rebuild from a prior cache.
         restore-keys: |
           ${{ runner.os }}-nextjs-${{ hashFiles('**/package-lock.json') }}-
@@ -75,10 +84,24 @@ jobs:
         NEXT_PUBLIC_CL_ENDPOINT: ${{ secrets.NEXT_PUBLIC_CL_ENDPOINT }}
         NEXT_PUBLIC_JSON_DATA_FOLDER: ../../../data/json/
 
-    - name: Deploy 🚀
-      uses: peaceiris/actions-gh-pages@v3
+    - name: Setup Pages 📄
+      uses: actions/configure-pages@v2
+
+    - name: Upload artifact 🚀
+      uses: actions/upload-pages-artifact@v1
       with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_branch: gh-pages
-        publish_dir: ./demo-store-core/packages/website/out
-        force_orphan: true
+        path: ./demo-store-core/packages/website/out/
+
+
+  deploy:
+    needs: [build]
+    runs-on: ubuntu-latest
+
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - name: Deploy to GitHub Pages 🚀
+        id: deployment
+        uses: actions/deploy-pages@v1

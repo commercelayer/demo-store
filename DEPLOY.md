@@ -10,11 +10,9 @@ Configuring GitHub workflows is straightforward. We already created one that can
 
     <img width="640" alt="Repository secrets" src="https://user-images.githubusercontent.com/1681269/185638408-f5c68563-1197-436c-a2b0-9aaf0dfbc16a.png">
 
-2. Now you should be able to run the workflow. This will build your Demo Store statically and deploy the artifact to a `gh-pages` branch.
+2. Now you should be able to run the workflow. This will build your Demo Store statically and deploy the artifact to GitHub Pages.
 
    ![Run workflow](https://user-images.githubusercontent.com/1681269/185639837-5b81186b-f5e7-43cd-bf7a-1c00f3b71b58.png)
-
-3. If you want to release your website to GitHub Pages, just [configure a publishing source](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site#publishing-from-a-branch) to publish from that branch.
 
 > :information_source: Feel free to update the workflow according to your needs. You can trigger the deploy with every `git push` or change the "Deploy" step (e.g. by publishing the artifact somewhere else such as AWS S3, Netlify, etc.).
 
