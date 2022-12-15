@@ -134,13 +134,19 @@ NEXT_PUBLIC_CL_ENDPOINT=https://my-awesome-organization.commercelayer.io
 
 #### 3. Seed the data
 
+> :information_source: This step is optional. If you already have a properly configured organization on your Commerce Layer account, you can skip it.
+
 The following script will populate your organization with all the resources you need to build a multi-market ecommerce with Commerce Layer (the ones we are using for our [Demo Store](https://commercelayer.github.io/demo-store-core)).
 
 ```sh
 npm run seeder:seed -ws --if-present
 ```
 
-> :information_source: This step is optional. If you already have a properly configured organization on your Commerce Layer account, you can skip it.
+If the command above executes with no errors, please [skip to step 4](#4-choose-the-countries-where-youre-going-to-sell). Otherwise, you can still seed your organization with sample data using the CLI by running the following:
+
+```sh
+commercelayer seeder:seed -b custom -n demo_store_full -u ./demo-store-core/packages/setup/
+```
 
 #### 4. Choose the countries where you're going to sell
 
