@@ -45,7 +45,7 @@ The Demo Store project consists of two repositories that you can leverage to bui
 
 - [`demo-store`](https://github.com/commercelayer/demo-store)
 
-  This is a **GitHub template** that uses the below-mentioned `demo-store-core` as a [git submodule](https://git-scm.com/book/en/v2/Git-Tools-Submodules). If you're happy with the features and the look and feel of the Commerce Layer Demo Store we suggest you follow this path. You won't have to care about the whole source code and you'll be free to focus just on [your data and content](#customization). On top of that, you'll get free updates with almost no risk just by running:
+  This is a **GitHub template** that uses the below-mentioned `demo-store-core` as a [git submodule](https://git-scm.com/book/en/v2/Git-Tools-Submodules). If you're happy with the features and the look and feel of the Commerce Layer Demo Store we suggest you follow this path. You won't have to care about the whole source code and you'll be free to focus just on [your data and content](#customization). On top of that, you'll get free updates with [almost no risk](#managing-updates) just by running:
 
   ```sh
   git submodule update --remote
@@ -163,6 +163,23 @@ npm run dev
 
 # http://localhost:3000/
 ```
+
+
+## Managing updates
+
+You can always find the latest code of the `demo-store-core` in its `master` branch.
+
+To update your Demo Store to the latest changes you can simply run:
+
+```sh
+git submodule update --remote
+npm install
+```
+
+Sometimes can happen that a new major version contains breaking changes. In this case, by updating to the latest, your Demo Store could stop working and you'll need to manually solve all the issues by following the [release notes](https://github.com/commercelayer/demo-store-core/releases).
+
+If you like, you can receive a [GitHub notification](https://docs.github.com/en/account-and-profile/managing-subscriptions-and-notifications-on-github/setting-up-notifications/configuring-notifications#configuring-your-watch-settings-for-an-individual-repository) as soon a new version is released.
+
 
 ## Customization
 
