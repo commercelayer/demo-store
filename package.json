@@ -14,9 +14,10 @@
   },
   "license": "MIT",
   "dependencies": {
-    "@commercelayer/demo-store-types": "^0.0.0"
+    "@commercelayer/demo-store-types": "^1.1.0"
   },
   "engines": {
+    "node": "^16.15.0 || ^18.0.0",
     "npm": ">=8.10"
   },
   "packageManager": "npm@8.11.0"
