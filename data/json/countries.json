@@ -1,0 +1,74 @@
+[
+  {
+    "name": "Russia",
+    "code": "RU",
+    "market": 11279,
+    "catalog": "APAC",
+    "languages": ["en"],
+    "region": "Asia"
+  },
+  {
+    "name": "Saudi Arabia",
+    "code": "SA",
+    "market": 11279,
+    "catalog": "APAC",
+    "languages": ["en"],
+    "region": "Asia"
+  },
+  {
+    "name": "Singapore",
+    "code": "SG",
+    "market": 11279,
+    "catalog": "APAC",
+    "languages": ["en"],
+    "region": "Asia"
+  },
+  {
+    "name": "South Africa",
+    "code": "ZA",
+    "market": 11279,
+    "catalog": "EMEA",
+    "languages": ["en"],
+    "region": "Africa"
+  },
+  {
+    "name": "Spain",
+    "code": "ES",
+    "market": 11278,
+    "catalog": "EMEA",
+    "languages": ["it", "en"],
+    "region": "Europe"
+  },
+  {
+    "name": "Sweden",
+    "code": "SE",
+    "market": 11278,
+    "catalog": "EMEA",
+    "languages": ["en"],
+    "region": "Europe"
+  },
+  {
+    "name": "Switzerland",
+    "code": "CH",
+    "market": 11278,
+    "catalog": "EMEA",
+    "languages": ["en"],
+    "region": "Europe"
+  },
+  {
+    "name": "Turkey",
+    "code": "TR",
+    "market": 11278,
+    "catalog": "EMEA",
+    "languages": ["en"],
+    "region": "Europe"
+  },
+  {
+    "name": "United Kingdom",
+    "code": "GB",
+    "market": 11280,
+    "catalog": "EMEA",
+    "languages": ["en"],
+    "region": "Europe"
+  }
+]

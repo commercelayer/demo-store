@@ -1,0 +1,313 @@
+{
+  "/": {
+    "en": {
+      "components": [
+        {
+          "type": "carousel",
+          "id": "carousel-1",
+          "slides": [
+            {
+              "image": {
+                "src": "https://res.cloudinary.com/commercelayer/image/upload/f_auto/v1658318039/demo-store/assets/all-over-print-backpack-white-front.jpg",
+                "alt": "Space for everything"
+              },
+              "title": "Space for everything",
+              "description": "Our backpack collection has been designed to meet the needs of all kinds of people, from urban city-dwellers to outdoor adventurers.",
+              "linkLabel": "Shop here",
+              "linkHref": "/search/bags"
+            },
+            {
+              "image": {
+                "src": "https://res.cloudinary.com/commercelayer/image/upload/f_auto/v1658318039/demo-store/assets/all-over-print-backpack-white-front.jpg",
+                "alt": "Space for everything"
+              },
+              "title": "Space for everything",
+              "description": "Our backpack collection has been designed to meet the needs of all kinds of people, from urban city-dwellers to outdoor adventurers.",
+              "linkLabel": "Shop here",
+              "linkHref": "/search/bags"
+            }
+          ]
+        },
+        {
+          "type": "hero",
+          "id": "hero-1",
+          "image": {
+            "src": "https://res.cloudinary.com/commercelayer/image/upload/f_auto/v1658318039/demo-store/assets/30-sales-commerce-layer.jpg",
+            "alt": "30% OFF SALE - CL30"
+          },
+          "title": "30% OFF SALE - CL30",
+          "href": "/search/bags"
+        },
+        {
+          "type": "product-grid",
+          "id": "product-grid-1",
+          "title": "Best seller",
+          "skus": [
+            "SHIRTMLS9B969C000000LXXX",
+            "BASEBHAT000000FFFFFFXXXX",
+            "TOTEBAGLE7DDC7000000XXXX",
+            "BABYBIBXA19D9D000000XXXX"
+          ]
+        },
+        {
+          "type": "grid",
+          "id": "grid-1",
+          "items": [
+            {
+              "image": {
+                "src": "https://res.cloudinary.com/commercelayer/image/upload/f_auto/v1655471032/demo-store/assets/white-glossy-mug-15oz-woman.jpg",
+                "alt": "Mug collection"
+              },
+              "title": "Mug collection",
+              "description": "Our mug collection has been designed to meet the needs of all kinds of people.",
+              "linkLabel": "Discover now",
+              "linkHref": "/search/accessories"
+            },
+            {
+              "image": {
+                "src": "https://res.cloudinary.com/commercelayer/image/upload/f_auto/v1655471055/demo-store/assets/classic-dad-hat-black-front.jpg",
+                "alt": "Hats collection"
+              },
+              "title": "Hats collection",
+              "description": "Our hat collection has been designed to meet the needs of all kinds of people.",
+              "linkLabel": "Discover now",
+              "linkHref": "/search/hats"
+            },
+            {
+              "image": {
+                "src": "https://res.cloudinary.com/commercelayer/image/upload/f_auto/v1655471072/demo-store/assets/all-over-print-basic-pillow-18x18-front-lifestyle-1.jpg",
+                "alt": "Home living collection"
+              },
+              "title": "Home living collection",
+              "description": "Our home living collection has been designed to meet the needs of all kinds of people.",
+              "linkLabel": "Discover now",
+              "linkHref": "/search/home-and-living"
+            }
+          ]
+        }
+      ]
+    },
+    "it": {
+      "components": [
+        {
+          "type": "carousel",
+          "id": "carousel-1",
+          "slides": [
+            {
+              "image": {
+                "src": "https://res.cloudinary.com/commercelayer/image/upload/f_auto/v1658318039/demo-store/assets/all-over-print-backpack-white-front.jpg",
+                "alt": "Spazio per tutto"
+              },
+              "title": "Spazio per tutto",
+              "description": "La nostra collezione di zaini è stata progettata per soddisfare le esigenze di tutti i tipi di persone, dagli abitanti delle città urbane agli avventurieri all'aperto.",
+              "linkLabel": "Acquista ora",
+              "linkHref": "/search/bags"
+            },
+            {
+              "image": {
+                "src": "https://res.cloudinary.com/commercelayer/image/upload/f_auto/v1658318039/demo-store/assets/all-over-print-backpack-white-front.jpg",
+                "alt": "Spazio per tutto"
+              },
+              "title": "Spazio per tutto",
+              "description": "La nostra collezione di zaini è stata progettata per soddisfare le esigenze di tutti i tipi di persone, dagli abitanti delle città urbane agli avventurieri all'aperto.",
+              "linkLabel": "Acquista ora",
+              "linkHref": "/search/bags"
+            }
+          ]
+        },
+        {
+          "type": "hero",
+          "id": "hero-1",
+          "image": {
+            "src": "https://res.cloudinary.com/commercelayer/image/upload/f_auto/v1658318039/demo-store/assets/30-sales-commerce-layer.jpg",
+            "alt": "30% SCONTO - CL30"
+          },
+          "title": "30% SCONTO - CL30",
+          "href": "/search/bags"
+        },
+        {
+          "type": "product-grid",
+          "id": "product-grid-1",
+          "title": "I più venduti",
+          "skus": [
+            "SHIRTMLS9B969C000000LXXX",
+            "BASEBHAT000000FFFFFFXXXX",
+            "TOTEBAGLE7DDC7000000XXXX",
+            "BABYBIBXA19D9D000000XXXX"
+          ]
+        },
+        {
+          "type": "grid",
+          "id": "grid-1",
+          "items": [
+            {
+              "image": {
+                "src": "https://res.cloudinary.com/commercelayer/image/upload/f_auto/v1655471055/demo-store/assets/classic-dad-hat-black-front.jpg",
+                "alt": "Cappelli"
+              },
+              "title": "Cappelli",
+              "description": "La nostra collezione di cappelli è stata progettata per soddisfare le esigenze di tutti i tipi di persone.",
+              "linkLabel": "Scopri adesso",
+              "linkHref": "/search/hats"
+            },
+            {
+              "image": {
+                "src": "https://res.cloudinary.com/commercelayer/image/upload/f_auto/v1655471072/demo-store/assets/all-over-print-basic-pillow-18x18-front-lifestyle-1.jpg",
+                "alt": "Casa"
+              },
+              "title": "Casa",
+              "description": "La nostra collezione per la casa è stata progettata per soddisfare le esigenze di tutti i tipi di persone.",
+              "linkLabel": "Scopri adesso",
+              "linkHref": "/search/home-and-living"
+            },
+            {
+              "image": {
+                "src": "https://res.cloudinary.com/commercelayer/image/upload/f_auto/v1655471032/demo-store/assets/white-glossy-mug-15oz-woman.jpg",
+                "alt": "Tazze"
+              },
+              "title": "Tazze",
+              "description": "La nostra collezione di tazze è stata progettata per soddisfare le esigenze di tutti i tipi di persone.",
+              "linkLabel": "Scopri adesso",
+              "linkHref": "/search/accessories"
+            }
+          ]
+        }
+      ]
+    },
+    "fr": {
+      "components": [
+        {
+          "type": "carousel",
+          "id": "carousel-1",
+          "slides": [
+            {
+              "image": {
+                "src": "https://res.cloudinary.com/commercelayer/image/upload/f_auto/v1658318039/demo-store/assets/all-over-print-backpack-white-front.jpg",
+                "alt": "Espace pour tout"
+              },
+              "title": "Espace pour tout",
+              "description": "Notre collection de sacs à dos a été conçue pour répondre aux besoins de toutes sortes de personnes, des citadins urbains aux aventuriers en plein air.",
+              "linkLabel": "Achetez ici",
+              "linkHref": "/search/bags"
+            },
+            {
+              "image": {
+                "src": "https://res.cloudinary.com/commercelayer/image/upload/f_auto/v1658318039/demo-store/assets/all-over-print-backpack-white-front.jpg",
+                "alt": "Espace pour tout"
+              },
+              "title": "Espace pour tout",
+              "description": "Notre collection de sacs à dos a été conçue pour répondre aux besoins de toutes sortes de personnes, des citadins urbains aux aventuriers en plein air.",
+              "linkLabel": "Achetez ici",
+              "linkHref": "/search/bags"
+            }
+          ]
+        },
+        {
+          "type": "hero",
+          "id": "hero-1",
+          "image": {
+            "src": "https://res.cloudinary.com/commercelayer/image/upload/f_auto/v1658318039/demo-store/assets/30-sales-commerce-layer.jpg",
+            "alt": "30% DE RÉDUCTION SUR LA VENTE - CL30"
+          },
+          "title": "30% DE RÉDUCTION SUR LA VENTE - CL30",
+          "href": "/search/bags"
+        },
+        {
+          "type": "product-grid",
+          "id": "product-grid-1",
+          "title": "Best seller",
+          "skus": [
+            "SHIRTMLS9B969C000000LXXX",
+            "BASEBHAT000000FFFFFFXXXX",
+            "TOTEBAGLE7DDC7000000XXXX",
+            "BABYBIBXA19D9D000000XXXX"
+          ]
+        },
+        {
+          "type": "grid",
+          "id": "grid-1",
+          "items": [
+            {
+              "image": {
+                "src": "https://res.cloudinary.com/commercelayer/image/upload/f_auto/v1655471032/demo-store/assets/white-glossy-mug-15oz-woman.jpg",
+                "alt": "Collection de tasses"
+              },
+              "title": "Collection de tasses",
+              "description": "Notre collection de mugs a été conçue pour répondre aux besoins de toutes sortes de personnes.",
+              "linkLabel": "Découvrez maintenant",
+              "linkHref": "/search/accessories"
+            },
+            {
+              "image": {
+                "src": "https://res.cloudinary.com/commercelayer/image/upload/f_auto/v1655471055/demo-store/assets/classic-dad-hat-black-front.jpg",
+                "alt": "Collection de chapeaux"
+              },
+              "title": "Collection de chapeaux",
+              "description": "Notre collection de chapeaux a été conçue pour répondre aux besoins de toutes sortes de personnes.",
+              "linkLabel": "Découvrez maintenant",
+              "linkHref": "/search/hats"
+            },
+            {
+              "image": {
+                "src": "https://res.cloudinary.com/commercelayer/image/upload/f_auto/v1655471072/demo-store/assets/all-over-print-basic-pillow-18x18-front-lifestyle-1.jpg",
+                "alt": "Collection de vie à la maison"
+              },
+              "title": "Collection de vie à la maison",
+              "description": "Notre collection Home Living a été conçue pour répondre aux besoins de toutes sortes de personnes.",
+              "linkLabel": "Découvrez maintenant",
+              "linkHref": "/search/home-and-living"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "/shipping-and-payments": {
+    "en": {
+      "title": "Shipping & Payments",
+      "components": [
+        {
+          "type": "markdown",
+          "id": "shipping-and-payments",
+          "content": "Cookies and other similar technologies are an essential part of how our Platform works. The main goal of cookies is to make your browsing experience easier and more efficient and to improve our services and the Platform itself. Likewise, we use cookies to show you targeted advertising when you visit third-party websites and apps. Here, you will find all the information on the cookies we use. Furthermore, you will be able to activate and/or deactivate them according to your preferences, except for any cookies that are strictly necessary for the functioning of the Platform.\\\n\\\nKeep in mind that blocking certain cookies may affect your experience on the Platform, as well as its functioning. By clicking “Confirm my preferences,” the cookies selection you have made will be saved. If you have not selected any options, clicking this button will be the same as blocking all cookies. For more information, please consult our terms.\\\n\\\nHere, you will find all the information on the cookies we use. Furthermore, you will be able to activate and/or deactivate them according to your preferences, except for any cookies that are strictly necessary for the functioning of the Platform.\\\n\\\nCookies and other similar technologies are an essential part of how our Platform works. The main goal of cookies is to make your browsing experience easier and more efficient and to improve our services and the Platform itself. Likewise, we use cookies to show you targeted advertising when you visit third-party websites and apps\n\n## Cookies & Privacy\n\nCookies and other similar technologies are an essential part of how our Platform works. The main goal of cookies is to make your browsing experience easier and more efficient and to improve our services and the Platform itself. Likewise, we use cookies to show you targeted advertising when you visit third-party websites and apps. Here, you will find all the information on the cookies we use. Furthermore, you will be able to activate and/or deactivate them according to your preferences, except for any cookies that are strictly necessary for the functioning of the Platform.\\\n\\\nKeep in mind that blocking certain cookies may affect your experience on the Platform, as well as its functioning. By clicking “Confirm my preferences,” the cookies selection you have made will be saved. If you have not selected any options, clicking this button will be the same as blocking all cookies. For more information, please consult our terms.\\\n\\\nHere, you will find all the information on the cookies we use. Furthermore, you will be able to activate and/or deactivate them according to your preferences, except for any cookies that are strictly necessary for the functioning of the Platform.\\\n\\\nCookies and other similar technologies are an essential part of how our Platform works. The main goal of cookies is to make your browsing experience easier and more efficient and to improve our services and the Platform itself. Likewise, we use cookies to show you targeted advertising when you visit third-party websites and apps"
+        }
+      ]
+    }
+  },
+  "/returns": {
+    "en": {
+      "title": "Returns",
+      "components": [
+        {
+          "type": "markdown",
+          "id": "returns",
+          "content": "Cookies and other similar technologies are an essential part of how our Platform works. The main goal of cookies is to make your browsing experience easier and more efficient and to improve our services and the Platform itself. Likewise, we use cookies to show you targeted advertising when you visit third-party websites and apps. Here, you will find all the information on the cookies we use. Furthermore, you will be able to activate and/or deactivate them according to your preferences, except for any cookies that are strictly necessary for the functioning of the Platform.\\\n\\\nKeep in mind that blocking certain cookies may affect your experience on the Platform, as well as its functioning. By clicking “Confirm my preferences,” the cookies selection you have made will be saved. If you have not selected any options, clicking this button will be the same as blocking all cookies. For more information, please consult our terms.\\\n\\\nHere, you will find all the information on the cookies we use. Furthermore, you will be able to activate and/or deactivate them according to your preferences, except for any cookies that are strictly necessary for the functioning of the Platform.\\\n\\\nCookies and other similar technologies are an essential part of how our Platform works. The main goal of cookies is to make your browsing experience easier and more efficient and to improve our services and the Platform itself. Likewise, we use cookies to show you targeted advertising when you visit third-party websites and apps\n\n## Cookies & Privacy\n\nCookies and other similar technologies are an essential part of how our Platform works. The main goal of cookies is to make your browsing experience easier and more efficient and to improve our services and the Platform itself. Likewise, we use cookies to show you targeted advertising when you visit third-party websites and apps. Here, you will find all the information on the cookies we use. Furthermore, you will be able to activate and/or deactivate them according to your preferences, except for any cookies that are strictly necessary for the functioning of the Platform.\\\n\\\nKeep in mind that blocking certain cookies may affect your experience on the Platform, as well as its functioning. By clicking “Confirm my preferences,” the cookies selection you have made will be saved. If you have not selected any options, clicking this button will be the same as blocking all cookies. For more information, please consult our terms.\\\n\\\nHere, you will find all the information on the cookies we use. Furthermore, you will be able to activate and/or deactivate them according to your preferences, except for any cookies that are strictly necessary for the functioning of the Platform.\\\n\\\nCookies and other similar technologies are an essential part of how our Platform works. The main goal of cookies is to make your browsing experience easier and more efficient and to improve our services and the Platform itself. Likewise, we use cookies to show you targeted advertising when you visit third-party websites and apps"
+        }
+      ]
+    }
+  },
+  "/terms-and-conditions": {
+    "en": {
+      "title": "Terms and conditions",
+      "components": [
+        {
+          "type": "markdown",
+          "id": "terms-and-conditions",
+          "content": "Cookies and other similar technologies are an essential part of how our Platform works. The main goal of cookies is to make your browsing experience easier and more efficient and to improve our services and the Platform itself. Likewise, we use cookies to show you targeted advertising when you visit third-party websites and apps. Here, you will find all the information on the cookies we use. Furthermore, you will be able to activate and/or deactivate them according to your preferences, except for any cookies that are strictly necessary for the functioning of the Platform.\\\n\\\nKeep in mind that blocking certain cookies may affect your experience on the Platform, as well as its functioning. By clicking “Confirm my preferences,” the cookies selection you have made will be saved. If you have not selected any options, clicking this button will be the same as blocking all cookies. For more information, please consult our terms.\\\n\\\nHere, you will find all the information on the cookies we use. Furthermore, you will be able to activate and/or deactivate them according to your preferences, except for any cookies that are strictly necessary for the functioning of the Platform.\\\n\\\nCookies and other similar technologies are an essential part of how our Platform works. The main goal of cookies is to make your browsing experience easier and more efficient and to improve our services and the Platform itself. Likewise, we use cookies to show you targeted advertising when you visit third-party websites and apps\n\n## Cookies & Privacy\n\nCookies and other similar technologies are an essential part of how our Platform works. The main goal of cookies is to make your browsing experience easier and more efficient and to improve our services and the Platform itself. Likewise, we use cookies to show you targeted advertising when you visit third-party websites and apps. Here, you will find all the information on the cookies we use. Furthermore, you will be able to activate and/or deactivate them according to your preferences, except for any cookies that are strictly necessary for the functioning of the Platform.\\\n\\\nKeep in mind that blocking certain cookies may affect your experience on the Platform, as well as its functioning. By clicking “Confirm my preferences,” the cookies selection you have made will be saved. If you have not selected any options, clicking this button will be the same as blocking all cookies. For more information, please consult our terms.\\\n\\\nHere, you will find all the information on the cookies we use. Furthermore, you will be able to activate and/or deactivate them according to your preferences, except for any cookies that are strictly necessary for the functioning of the Platform.\\\n\\\nCookies and other similar technologies are an essential part of how our Platform works. The main goal of cookies is to make your browsing experience easier and more efficient and to improve our services and the Platform itself. Likewise, we use cookies to show you targeted advertising when you visit third-party websites and apps"
+        }
+      ]
+    }
+  },
+  "/cookies-and-privacy": {
+    "en": {
+      "title": "Cookies & Privacy",
+      "components": [
+        {
+          "type": "markdown",
+          "id": "cookies-and-privacy",
+          "content": "Cookies and other similar technologies are an essential part of how our Platform works. The main goal of cookies is to make your browsing experience easier and more efficient and to improve our services and the Platform itself. Likewise, we use cookies to show you targeted advertising when you visit third-party websites and apps. Here, you will find all the information on the cookies we use. Furthermore, you will be able to activate and/or deactivate them according to your preferences, except for any cookies that are strictly necessary for the functioning of the Platform.\\\n\\\nKeep in mind that blocking certain cookies may affect your experience on the Platform, as well as its functioning. By clicking “Confirm my preferences,” the cookies selection you have made will be saved. If you have not selected any options, clicking this button will be the same as blocking all cookies. For more information, please consult our terms.\\\n\\\nHere, you will find all the information on the cookies we use. Furthermore, you will be able to activate and/or deactivate them according to your preferences, except for any cookies that are strictly necessary for the functioning of the Platform.\\\n\\\nCookies and other similar technologies are an essential part of how our Platform works. The main goal of cookies is to make your browsing experience easier and more efficient and to improve our services and the Platform itself. Likewise, we use cookies to show you targeted advertising when you visit third-party websites and apps\n\n## Cookies & Privacy\n\nCookies and other similar technologies are an essential part of how our Platform works. The main goal of cookies is to make your browsing experience easier and more efficient and to improve our services and the Platform itself. Likewise, we use cookies to show you targeted advertising when you visit third-party websites and apps. Here, you will find all the information on the cookies we use. Furthermore, you will be able to activate and/or deactivate them according to your preferences, except for any cookies that are strictly necessary for the functioning of the Platform.\\\n\\\nKeep in mind that blocking certain cookies may affect your experience on the Platform, as well as its functioning. By clicking “Confirm my preferences,” the cookies selection you have made will be saved. If you have not selected any options, clicking this button will be the same as blocking all cookies. For more information, please consult our terms.\\\n\\\nHere, you will find all the information on the cookies we use. Furthermore, you will be able to activate and/or deactivate them according to your preferences, except for any cookies that are strictly necessary for the functioning of the Platform.\\\n\\\nCookies and other similar technologies are an essential part of how our Platform works. The main goal of cookies is to make your browsing experience easier and more efficient and to improve our services and the Platform itself. Likewise, we use cookies to show you targeted advertising when you visit third-party websites and apps"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,491 @@
+[
+  {
+    "id": "taxon_1",
+    "label": {
+      "en": "Accessories",
+      "it": "Accessori",
+      "fr": "Accessoires"
+    },
+    "description": {
+      "en": "All accessories",
+      "it": "Tutti gli accessori",
+      "fr": "Tous les accessoires"
+    },
+    "slug": "/accessories",
+    "name": "All Accessories",
+    "references": [
+      "APRONXXX000000FFFFFFXXXX",
+      "APRONXXXFFFFFF000000XXXX",
+      "BABYBIBXA19D9D000000XXXX",
+      "BTOW3060000000FFFFFFXXXX",
+      "BTOW3060FFFFFF000000XXXX",
+      "FACEMASK000000FFFFFFXXXX",
+      "FACEMASKFFFFFF000000XXXX",
+      "FLIPFLOP000000FFFFFF75XX",
+      "FLIPFLOPFFFFFF00000075XX",
+      "SOCKSXXX000000FFFFFFLXXX",
+      "SOCKSXXXFFFFFF000000LXXX",
+      "GLCS21PXXXXXXXFFFFFFXXXX",
+      "GLCS21UXXXXXXXFFFFFFXXXX",
+      "IPC11PXX000000FFFFFFXXXX",
+      "IPC11XXX000000FFFFFFXXXX",
+      "IPC12PMXXXXXXX000000XXXX",
+      "LAPTSL13000000FFFFFFXXXX",
+      "LAPTSL15000000FFFFFFXXXX"
+    ]
+  },
+  {
+    "id": "taxon_2",
+    "label": {
+      "en": "Baby",
+      "it": "Baby",
+      "fr": "Bébé"
+    },
+    "description": {
+      "en": "All products for babies",
+      "it": "Tutti i prodotti per neonati",
+      "fr": "Tous les produits pour bébés"
+    },
+    "slug": "/baby",
+    "name": "All Products for Babies",
+    "references": [
+      "BABYBIBXA19D9D000000XXXX",
+      "BODYBSSS000000FFFFFF12MX",
+      "BODYBSSSFFFFFF00000012MX"
+    ]
+  },
+  {
+    "id": "taxon_3",
+    "label": {
+      "en": "Bags",
+      "it": "Borse",
+      "fr": "Sacs"
+    },
+    "description": {
+      "en": "All bags",
+      "it": "Tutte le borse",
+      "fr": "Tous les sacs"
+    },
+    "slug": "/bags",
+    "name": "All Bags",
+    "references": [
+      "BACKPACK000000FFFFFFXXXX",
+      "BACKPACK818488000000XXXX",
+      "BACKPACKFFFFFF000000XXXX",
+      "BEACHBAG000000FFFFFFXXXX",
+      "BEACHBAGFFFFFF000000XXXX",
+      "DRAWSBAG000000FFFFFFXXXX",
+      "DRAWSBAGFFFFFF000000XXXX",
+      "DUFFLBAG000000FFFFFFXXXX",
+      "DUFFLBAGFFFFFF000000XXXX",
+      "FANNPACK000000FFFFFFXXXX",
+      "FANNPACKFFFFFF000000XXXX",
+      "TOTEBAGL000000FFFFFFXXXX",
+      "TOTEBAGLE7DDC7000000XXXX",
+      "TOTEBAGX000000FFFFFFXXXX",
+      "TOTEBAGXE7DDC7000000XXXX"
+    ]
+  },
+  {
+    "id": "taxon_4",
+    "label": {
+      "en": "Hats",
+      "it": "Cappelli",
+      "fr": "Chapeaux"
+    },
+    "description": {
+      "en": "All hats",
+      "it": "Tutti i cappelli",
+      "fr": "Tous les chapeaux"
+    },
+    "slug": "/hats",
+    "name": "All Hats",
+    "references": [
+      "5PANECAP000000FFFFFFXXXX",
+      "5PANECAP9D9CA1FFFFFFXXXX",
+      "BASEBHAT000000FFFFFFXXXX",
+      "BASEBHATFFFFFF000000XXXX",
+      "BEANIEXX000000FFFFFFXXXX",
+      "BEANIEXXFFFFFF000000XXXX",
+      "CUFFBEAN000000FFFFFFXXXX",
+      "CUFFBEANA6A5A0000000XXXX",
+      "CUFFBEANFFFFFF000000XXXX",
+      "MESHBACK323230FFFFFFXXXX",
+      "PPOMBEAN000000FFFFFFXXXX",
+      "PPOMBEAN74736EFFFFFFXXXX",
+      "VFLEXFIT000000FFFFFFXXXX",
+      "VFLEXFITFFFFFF000000XXXX"
+    ]
+  },
+  {
+    "id": "taxon_5",
+    "label": {
+      "en": "Home & Living",
+      "it": "Casa",
+      "fr": "La maison et la vie"
+    },
+    "description": {
+      "en": "All products for home & living",
+      "it": "Tutti i prodotti per la tua casa",
+      "fr": "Tous les produits pour la maison et la vie"
+    },
+    "slug": "/home-and-living",
+    "name": "All Products for Home & Living",
+    "references": [
+      "BEACHAIR000000FFFFFFXXXX",
+      "BEACHAIRFFFFFF000000XXXX",
+      "BOTT17OZFFFFFF000000XXXX",
+      "EMUG12OZFFFFFF000000XXXX",
+      "GMUG11OZFFFFFF000000XXXX",
+      "NOTEBOOK000000FFFFFFXXXX",
+      "NOTEBOOKFFFFFF000000XXXX",
+      "POST2130000000000000XXXX",
+      "POST2130FFFFFF000000XXXX",
+      "POST6191000000000000XXXX",
+      "POST6191FFFFFF000000XXXX",
+      "PILL1818000000FFFFFFXXXX",
+      "PILL1818FFFFFF000000XXXX",
+      "PILL2012000000FFFFFFXXXX",
+      "PILL2012FFFFFF000000XXXX"
+    ]
+  },
+  {
+    "id": "taxon_6",
+    "label": {
+      "en": "Men",
+      "it": "Uomo",
+      "fr": "Homme"
+    },
+    "description": {
+      "en": "All products for men",
+      "it": "Tutti i prodotti da uomo",
+      "fr": "Tous les produits pour homme"
+    },
+    "slug": "/men",
+    "name": "All Products for Men",
+    "references": [
+      "HOODIEMX000000FFFFFFLXXX",
+      "HOODIEMX7F7F7F000000LXXX",
+      "HOODIEMXFFFFFF000000LXXX",
+      "POLOMXXX000000FFFFFFLXXX",
+      "POLOMXXXC2C2C2000000LXXX",
+      "POLOMXXXFFFFFF000000LXXX",
+      "SHIRTMLS000000FFFFFFLXXX",
+      "SHIRTMLS9B969C000000LXXX",
+      "SHIRTMLSFFFFFF000000LXXX",
+      "SHIRTMMX000000FFFFFFLXXX",
+      "SHIRTMMX8E8C8D000000LXXX",
+      "SHIRTMMXFFFFFF000000LXXX",
+      "SWEATMXX000000FFFFFFLXXX",
+      "SWEATMXX9B969C000000LXXX",
+      "SWEATMXXFFFFFF000000LXXX",
+      "TANKTOPM000000FFFFFFLXXX",
+      "TANKTOPM7E7F84000000LXXX",
+      "TSHIRTMS000000FFFFFFLXXX",
+      "TSHIRTMSB0B0B2000000LXXX",
+      "TSHIRTMSFFFFFF000000LXXX"
+    ]
+  },
+  {
+    "id": "taxon_7",
+    "label": {
+      "en": "Shirts",
+      "it": "Magliette",
+      "fr": "Chemises"
+    },
+    "description": {
+      "en": "All shirts",
+      "it": "Tutte le magliette"
+    },
+    "slug": "/shirts",
+    "name": "All Shirts",
+    "references": [
+      "BODYBSSS000000FFFFFF12MX",
+      "BODYBSSSFFFFFF00000012MX"
+    ],
+    "taxons": ["taxon_7A", "taxon_7B"]
+  },
+  {
+    "id": "taxon_7A",
+    "label": {
+      "en": "Polo",
+      "it": "Polo",
+      "fr": "Polo"
+    },
+    "description": {
+      "en": "All polo shirts",
+      "it": "Tutte le polo",
+      "fr": "Toutes les polos"
+    },
+    "slug": "/shirts/polo",
+    "name": "All Polo Shirts",
+    "references": [],
+    "taxons": ["taxon_7AA", "taxon_7AB"]
+  },
+  {
+    "id": "taxon_7AA",
+    "label": {
+      "en": "Dark Polo",
+      "it": "Polo Scure",
+      "fr": "Polos foncées"
+    },
+    "description": {
+      "en": "All dark polo",
+      "it": "Tutte le polo scure",
+      "fr": "Toutes les polos foncées"
+    },
+    "slug": "/shirts/polo/dark",
+    "name": "All Polo Shirts",
+    "references": [
+      "POLOWXXX000000FFFFFFLXXX",
+      "POLOMXXX000000FFFFFFLXXX"
+    ]
+  },
+  {
+    "id": "taxon_7AB",
+    "label": {
+      "en": "All Others",
+      "it": "Tutte le altre",
+      "fr": "Toutes les autres"
+    },
+    "description": {
+      "en": "All other polo",
+      "it": "Tutte le altre polo",
+      "fr": "Toutes les autres polos"
+    },
+    "slug": "/shirts/polo/others",
+    "name": "All Polo Shirts",
+    "references": [
+      "POLOMXXXC2C2C2000000LXXX",
+      "POLOMXXXFFFFFF000000LXXX",
+      "POLOWXXXFFFFFF000000LXXX"
+    ]
+  },
+  {
+    "id": "taxon_7B",
+    "label": {
+      "en": "Other Shirts",
+      "it": "Tutte le altre magliette",
+      "fr": "Toutes les autres chemises"
+    },
+    "description": {
+      "en": "All other shirts",
+      "it": "Tutte le altre magliette",
+      "fr": "Toutes les autres chemises"
+    },
+    "slug": "/shirts/others",
+    "name": "All Shirts",
+    "references": [
+      "CROPTOPW000000FFFFFFLXXX",
+      "CROPTOPWE8E8E8000000LXXX",
+      "CROPTOPWFFFFFF000000LXXX",
+      "SHIRT34S000000FFFFFFLXXX",
+      "SHIRT34SFFFFFF000000LXXX",
+      "SHIRTMLS000000FFFFFFLXXX",
+      "SHIRTMLS9B969C000000LXXX",
+      "SHIRTMLSFFFFFF000000LXXX",
+      "SHIRTMMX000000FFFFFFLXXX",
+      "SHIRTMMX8E8C8D000000LXXX",
+      "SHIRTMMXFFFFFF000000LXXX",
+      "SHIRTWLS000000FFFFFFLXXX",
+      "SHIRTWLS9397A0000000LXXX",
+      "SHIRTWLSFFFFFF000000LXXX",
+      "TANKTOPM000000FFFFFFLXXX",
+      "TANKTOPM7E7F84000000LXXX",
+      "TANKTOPW000000FFFFFFMXXX",
+      "TANKTOPWFFFFFF000000MXXX",
+      "TSHIRTMS000000FFFFFFLXXX",
+      "TSHIRTMSB0B0B2000000LXXX",
+      "TSHIRTMSFFFFFF000000LXXX",
+      "TSHIRTWK000000FFFFFFMXXX",
+      "TSHIRTWKFFFFFF000000MXXX",
+      "TSHIRTWS000000FFFFFFLXXX",
+      "TSHIRTWSB5B1B2000000LXXX",
+      "TSHIRTWSFFFFFF000000LXXX",
+      "TSHIRTWV000000FFFFFFMXXX",
+      "TSHIRTWVCDCDCD000000MXXX"
+    ]
+  },
+  {
+    "id": "taxon_8",
+    "label": {
+      "en": "Sweatshirts",
+      "it": "Felpe",
+      "fr": "Sweatchemises"
+    },
+    "description": {
+      "en": "All sweatshirts",
+      "it": "Tutte le felpe",
+      "fr": "Toutes les sweatchemises"
+    },
+    "slug": "/sweatshirts",
+    "name": "All Sweatshirts",
+    "references": [
+      "HDRESSWX000000FFFFFFLXXX",
+      "HOODIEMX000000FFFFFFLXXX",
+      "HOODIEMX7F7F7F000000LXXX",
+      "HOODIEMXFFFFFF000000LXXX",
+      "HOODIEUZ000000FFFFFFLXXX",
+      "HOODIEUL000000FFFFFFLXXX",
+      "HOODIEWC000000FFFFFFLXXX",
+      "HOODIEWC575C51000000LXXX",
+      "SWEATMXX000000FFFFFFLXXX",
+      "SWEATMXX9B969C000000LXXX",
+      "SWEATMXXFFFFFF000000LXXX",
+      "SWEATWCX000000FFFFFFLXXX",
+      "SWEATWCX9B9A9F000000LXXX"
+    ]
+  },
+  {
+    "id": "taxon_9",
+    "label": {
+      "en": "Unisex",
+      "it": "Unisex",
+      "fr": "Unisex"
+    },
+    "description": {
+      "en": "All unisex products",
+      "it": "Tutti i prodotti unisex",
+      "fr": "Tous les produits unisex"
+    },
+    "slug": "/unisex",
+    "name": "All Unisex Products",
+    "references": [
+      "5PANECAP000000FFFFFFXXXX",
+      "5PANECAP9D9CA1FFFFFFXXXX",
+      "APRONXXX000000FFFFFFXXXX",
+      "APRONXXXFFFFFF000000XXXX",
+      "BABYBIBXA19D9D000000XXXX",
+      "BACKPACK000000FFFFFFXXXX",
+      "BACKPACK818488000000XXXX",
+      "BACKPACKFFFFFF000000XXXX",
+      "BASEBHAT000000FFFFFFXXXX",
+      "BASEBHATFFFFFF000000XXXX",
+      "BEACHAIR000000FFFFFFXXXX",
+      "BEACHAIRFFFFFF000000XXXX",
+      "BEACHBAG000000FFFFFFXXXX",
+      "BEACHBAGFFFFFF000000XXXX",
+      "BEANIEXX000000FFFFFFXXXX",
+      "BEANIEXXFFFFFF000000XXXX",
+      "BOTT17OZFFFFFF000000XXXX",
+      "BTOW3060000000FFFFFFXXXX",
+      "BTOW3060FFFFFF000000XXXX",
+      "CUFFBEAN000000FFFFFFXXXX",
+      "CUFFBEANA6A5A0000000XXXX",
+      "CUFFBEANFFFFFF000000XXXX",
+      "DRAWSBAG000000FFFFFFXXXX",
+      "DRAWSBAGFFFFFF000000XXXX",
+      "DUFFLBAG000000FFFFFFXXXX",
+      "DUFFLBAGFFFFFF000000XXXX",
+      "EMUG12OZFFFFFF000000XXXX",
+      "FACEMASK000000FFFFFFXXXX",
+      "FACEMASKFFFFFF000000XXXX",
+      "FANNPACK000000FFFFFFXXXX",
+      "FANNPACKFFFFFF000000XXXX",
+      "FLIPFLOP000000FFFFFF75XX",
+      "FLIPFLOPFFFFFF00000075XX",
+      "GLCS21PXXXXXXXFFFFFFXXXX",
+      "GLCS21UXXXXXXXFFFFFFXXXX",
+      "GMUG11OZFFFFFF000000XXXX",
+      "HOODIEUL000000FFFFFFLXXX",
+      "HOODIEUZ000000FFFFFFLXXX",
+      "IPC11PXX000000FFFFFFXXXX",
+      "IPC11XXX000000FFFFFFXXXX",
+      "IPC12PMXXXXXXX000000XXXX",
+      "LAPTSL13000000FFFFFFXXXX",
+      "LAPTSL15000000FFFFFFXXXX",
+      "MESHBACK323230FFFFFFXXXX",
+      "NOTEBOOK000000FFFFFFXXXX",
+      "NOTEBOOKFFFFFF000000XXXX",
+      "PILL1818000000FFFFFFXXXX",
+      "PILL1818FFFFFF000000XXXX",
+      "PILL2012000000FFFFFFXXXX",
+      "PILL2012FFFFFF000000XXXX",
+      "POST2130000000000000XXXX",
+      "POST2130FFFFFF000000XXXX",
+      "POST6191000000000000XXXX",
+      "POST6191FFFFFF000000XXXX",
+      "PPOMBEAN000000FFFFFFXXXX",
+      "PPOMBEAN74736EFFFFFFXXXX",
+      "SHIRT34S000000FFFFFFLXXX",
+      "SHIRT34SFFFFFF000000LXXX",
+      "SOCKSXXX000000FFFFFFLXXX",
+      "SOCKSXXXFFFFFF000000LXXX",
+      "TOTEBAGL000000FFFFFFXXXX",
+      "TOTEBAGLE7DDC7000000XXXX",
+      "TOTEBAGX000000FFFFFFXXXX",
+      "TOTEBAGXE7DDC7000000XXXX",
+      "VFLEXFIT000000FFFFFFXXXX",
+      "VFLEXFITFFFFFF000000XXXX"
+    ]
+  },
+  {
+    "id": "taxon_10",
+    "label": {
+      "en": "Women",
+      "it": "Donna",
+      "fr": "Femme"
+    },
+    "description": {
+      "en": "All products for women",
+      "it": "Tutti i prodotti da donna",
+      "fr": "Tous les produits pour femme"
+    },
+    "slug": "/women",
+    "name": "All Products for Women",
+    "references": [
+      "CROPTOPW000000FFFFFFLXXX",
+      "CROPTOPWE8E8E8000000LXXX",
+      "CROPTOPWFFFFFF000000LXXX",
+      "POLOWXXX000000FFFFFFLXXX",
+      "POLOWXXXFFFFFF000000LXXX",
+      "SHIRTWLS000000FFFFFFLXXX",
+      "SHIRTWLS9397A0000000LXXX",
+      "SHIRTWLSFFFFFF000000LXXX",
+      "TANKTOPW000000FFFFFFMXXX",
+      "TANKTOPWFFFFFF000000MXXX",
+      "TSHIRTWK000000FFFFFFMXXX",
+      "TSHIRTWKFFFFFF000000MXXX",
+      "TSHIRTWS000000FFFFFFLXXX",
+      "TSHIRTWSB5B1B2000000LXXX",
+      "TSHIRTWSFFFFFF000000LXXX",
+      "TSHIRTWV000000FFFFFFMXXX",
+      "TSHIRTWVCDCDCD000000MXXX"
+    ]
+  },
+  {
+    "id": "taxon_11",
+    "label": {
+      "en": "Shirts",
+      "it": "Magliette",
+      "fr": "Chemises"
+    },
+    "description": {
+      "en": "All shirts except womens",
+      "it": "Tutte le magliette escudendo le magliette da donna",
+      "fr": "Toutes les chemises sauf les chemises pour femme"
+    },
+    "slug": "/shirts",
+    "name": "All Shirts Except Womens",
+    "references": [
+      "BODYBSSS000000FFFFFF12MX",
+      "BODYBSSSFFFFFF00000012MX",
+      "POLOMXXX000000FFFFFFLXXX",
+      "POLOMXXXC2C2C2000000LXXX",
+      "POLOMXXXFFFFFF000000LXXX",
+      "SHIRT34S000000FFFFFFLXXX",
+      "SHIRT34SFFFFFF000000LXXX",
+      "SHIRTMLS000000FFFFFFLXXX",
+      "SHIRTMLS9B969C000000LXXX",
+      "SHIRTMLSFFFFFF000000LXXX",
+      "SHIRTMMX000000FFFFFFLXXX",
+      "SHIRTMMX8E8C8D000000LXXX",
+      "SHIRTMMXFFFFFF000000LXXX",
+      "TANKTOPM000000FFFFFFLXXX",
+      "TANKTOPM7E7F84000000LXXX",
+      "TSHIRTMS000000FFFFFFLXXX",
+      "TSHIRTMSB0B0B2000000LXXX",
+      "TSHIRTMSFFFFFF000000LXXX"
+    ]
+  }
+]
