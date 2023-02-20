@@ -9,14 +9,14 @@
     "local:build": "dotenv -c local npm run build -- -w demo-store-core/packages/website",
     "local:start": "dotenv -c local npm run start -- -w demo-store-core/packages/website",
     "local:serve": "dotenv -c local npm run local:serve -- -ws --if-present",
-    "test:data": "dotenv -c local npm run test:data -- -ws --if-present",
+    "local:test:data": "dotenv -c local npm run test:data -- -ws --if-present",
     "build": "npm run build -w demo-store-core/packages/website",
     "export": "npm run export -w demo-store-core/packages/website",
     "start": "npm run start -w demo-store-core/packages/website"
   },
   "license": "MIT",
   "dependencies": {
-    "@commercelayer/demo-store-types": "^2.0.0"
+    "@commercelayer/demo-store-types": "^2.3.0"
   },
   "engines": {
     "node": "^16.15.0 || ^18.0.0",

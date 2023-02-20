@@ -167,7 +167,7 @@ npm run dev
 
 ## Managing updates
 
-You can always find the latest code of the `demo-store-core` in its `master` branch.
+You can always find the latest code of the `demo-store-core` in its `main` branch.
 
 To update your Demo Store to the latest changes you can simply run:
 
@@ -248,7 +248,7 @@ NEXT_PUBLIC_CONFIG_FOLDER=../../../config/
 
 ### Additional environment variables
 
-There are some environment variables that you can use to customize your store. For an exhaustive list and description, you can take a look at [additional-env.d.ts](https://github.com/commercelayer/demo-store-core/blob/master/packages/website/additional-env.d.ts) file.
+There are some environment variables that you can use to customize your store. For an exhaustive list and description, you can take a look at [additional-env.d.ts](https://github.com/commercelayer/demo-store-core/blob/main/packages/website/additional-env.d.ts) file.
 
 ## Deploy
 
