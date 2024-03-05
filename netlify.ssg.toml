@@ -1,5 +1,5 @@
 [build]
-  command="npm run export"
+  command="npm run build"
   publish="demo-store-core/packages/website/out"
 
 [build.processing]
@@ -7,6 +7,7 @@
 
 [build.environment]
   NEXT_PUBLIC_JSON_DATA_FOLDER="../../../data/json/"
+  NEXT_PUBLIC_DATA_FETCHING="ssg"
 
 [template.environment]
   SITE_URL="Base url of your website."

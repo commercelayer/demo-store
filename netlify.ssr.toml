@@ -16,3 +16,11 @@
   SITE_URL="Base url of your website."
   NEXT_PUBLIC_CL_CLIENT_ID="Commerce Layer Sales Channel Client ID."
   NEXT_PUBLIC_CL_ENDPOINT="Commerce Layer Sales Channel Endpoint."
+
+# https://github.com/netlify/next-runtime/issues/2329#issuecomment-1907388023
+[functions]
+  included_files = [
+    "node_modules/next/dist/server/future/route-modules/pages/vendored/contexts/router-context*",
+    "node_modules/next/dist/server/future/route-modules/pages/vendored/contexts/amp-context*",
+    "node_modules/next/dist/server/future/route-modules/pages/vendored/contexts/head-manager-context*",
+  ]

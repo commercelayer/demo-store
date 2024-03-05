@@ -11,19 +11,18 @@
     "local:serve": "dotenv -c local npm run local:serve -- -ws --if-present",
     "local:test:data": "dotenv -c local npm run test:data -- -ws --if-present",
     "build": "npm run build -w demo-store-core/packages/website",
-    "export": "npm run export -w demo-store-core/packages/website",
     "start": "npm run start -w demo-store-core/packages/website"
   },
   "license": "MIT",
   "dependencies": {
-    "@commercelayer/demo-store-types": "^2.3.0"
+    "@commercelayer/demo-store-types": "^3.0.0"
   },
   "engines": {
-    "node": "^16.15.0 || ^18.0.0",
-    "npm": ">=8.10"
+    "node": ">= 18.17",
+    "npm": ">= 9.6"
   },
-  "packageManager": "npm@8.11.0",
+  "packageManager": "npm@9.6.7",
   "devDependencies": {
-    "dotenv": "^16.0.3"
+    "dotenv": "^16.4.5"
   }
 }

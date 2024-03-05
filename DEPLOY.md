@@ -53,6 +53,6 @@ From your Vercel dashboard:
 If you prefer to go the SSG way you just need to apply the following changes to the information above:
 
 - Framework preset: `Other`
-- Build command: `npm run export`
+- Build command: `npm run build`
 - Output directory: `demo-store-core/packages/website/out`
 - Environment variable: `NEXT_PUBLIC_DATA_FETCHING=ssg`

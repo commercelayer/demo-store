@@ -36,7 +36,7 @@ The Demo Store comes with:
 The integration with Commerce Layer is achieved by leveraging some of our open-source [developer tools](https://commercelayer.io/developers), specifically:
 
 - the [React components](https://github.com/commercelayer/commercelayer-react-components)
-- the embedded version of our [Hosted cart](https://github.com/commercelayer/commercelayer-cart#embedding-the-cart)
+- the [Hosted cart](https://github.com/commercelayer/commercelayer-cart#embedding-the-cart)
 - the [Hosted checkout](https://github.com/commercelayer/commercelayer-react-checkout)
 
 ## How it works
@@ -269,7 +269,7 @@ To build and deploy the Demo Store:
    NEXT_PUBLIC_DATA_FETCHING=ssg
    ```
 
-2. Run `npm run export` to create a statically optimized production build of your application.
+2. Run `npm run build` to create a statically optimized production build of your application.
 3. Copy the folder `demo-store-core/packages/website/out` to your preferred static hosting.
 
 ### Server-side rendering

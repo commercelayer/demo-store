@@ -17,16 +17,16 @@ jobs:
 
     strategy:
       matrix:
-        node: [16.x, 18.x]
+       node: [18.17.0, 18.x, 20.x]
 
     steps:
     - name: Checkout 🛎️
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
       with:
         submodules: recursive
 
     - name: Node 🧰
-      uses: actions/setup-node@v3
+      uses: actions/setup-node@v4
       with:
         node-version: ${{ matrix.node }}
         cache: 'npm'
@@ -49,12 +49,12 @@ jobs:
 
     steps:
     - name: Checkout 🛎️
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
       with:
         submodules: recursive
 
     - name: Cache 💾 # https://nextjs.org/docs/messages/no-cache#github-actions
-      uses: actions/cache@v3
+      uses: actions/cache@v4
       with:
         path: |
           ~/.npm
@@ -66,9 +66,9 @@ jobs:
           ${{ runner.os }}-nextjs-${{ hashFiles('**/package-lock.json') }}-
 
     - name: Node 🧰
-      uses: actions/setup-node@v3
+      uses: actions/setup-node@v4
       with:
-        node-version: 16.x
+        node-version: 20.x
         cache: 'npm'
 
     - name: Install 📦
@@ -76,19 +76,20 @@ jobs:
 
     - name: Build 🔧
       run: |
-        npm run export -ws --if-present
+        npm run build -ws --if-present
       env:
         SITE_URL: https://commercelayer.github.io/demo-store
         NEXT_PUBLIC_BASE_PATH: /demo-store
         NEXT_PUBLIC_CL_CLIENT_ID: ${{ secrets.NEXT_PUBLIC_CL_CLIENT_ID }}
         NEXT_PUBLIC_CL_ENDPOINT: ${{ secrets.NEXT_PUBLIC_CL_ENDPOINT }}
         NEXT_PUBLIC_JSON_DATA_FOLDER: ../../../data/json/
+        NEXT_PUBLIC_DATA_FETCHING: ssg
 
     - name: Setup Pages 📄
-      uses: actions/configure-pages@v2
+      uses: actions/configure-pages@v4
 
     - name: Upload artifact 🚀
-      uses: actions/upload-pages-artifact@v1
+      uses: actions/upload-pages-artifact@v3
       with:
         path: ./demo-store-core/packages/website/out/
 
@@ -104,4 +105,4 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages 🚀
         id: deployment
-        uses: actions/deploy-pages@v1
+        uses: actions/deploy-pages@v4
