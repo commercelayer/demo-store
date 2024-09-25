@@ -17,7 +17,7 @@ jobs:
 
     strategy:
       matrix:
-       node: [18.17.0, 18.x, 20.x]
+       node: [20.9.0, 20.x, 22.x]
 
     steps:
     - name: Checkout 🛎️
@@ -81,12 +81,11 @@ jobs:
         SITE_URL: https://commercelayer.github.io/demo-store
         NEXT_PUBLIC_BASE_PATH: /demo-store
         NEXT_PUBLIC_CL_CLIENT_ID: ${{ secrets.NEXT_PUBLIC_CL_CLIENT_ID }}
-        NEXT_PUBLIC_CL_ENDPOINT: ${{ secrets.NEXT_PUBLIC_CL_ENDPOINT }}
         NEXT_PUBLIC_JSON_DATA_FOLDER: ../../../data/json/
         NEXT_PUBLIC_DATA_FETCHING: ssg
 
     - name: Setup Pages 📄
-      uses: actions/configure-pages@v4
+      uses: actions/configure-pages@v5
 
     - name: Upload artifact 🚀
       uses: actions/upload-pages-artifact@v3

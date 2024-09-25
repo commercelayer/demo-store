@@ -8,7 +8,7 @@ Configuring GitHub workflows is straightforward. We already created one that can
 
 1. Review the [`gh-pages.yml`](.github/workflows/gh-pages.yml) file by updating the environment variables. You need and create two [secrets](https://docs.github.com/en/actions/security-guides/encrypted-secrets#creating-encrypted-secrets-for-a-repository) in your repository.
 
-    <img width="640" alt="Repository secrets" src="https://user-images.githubusercontent.com/1681269/185638408-f5c68563-1197-436c-a2b0-9aaf0dfbc16a.png">
+    <img width="640" alt="Repository secrets" src="https://github.com/user-attachments/assets/310bb818-c688-4ecf-94b8-46bab261c143">
 
 2. Now you should be able to run the workflow. This will build your Demo Store statically and deploy the artifact to GitHub Pages.
 
@@ -24,9 +24,9 @@ Inside the project root you can find two files: `netlify.ssg.toml` (for static s
 
 1. Rename one of these into `netlify.toml` and update the `[build.environment]` section with the environment variables as you need.
 2. From your Netlify dashboard, click on _"Add new site -> Import an existing project"_ and then select the correct repository.
-3. At this point, you should have some fields already filled in. Click on _"Show advanced"_ and add the missing environment variables: `SITE_URL`, `NEXT_PUBLIC_CL_CLIENT_ID`, and `NEXT_PUBLIC_CL_ENDPOINT`. Please note that you cannot know yet which will be the `SITE_URL` until Netlify creates a random site name after the first deployment.
+3. At this point, you should have some fields already filled in. Click on _"Show advanced"_ and add the missing environment variables: `SITE_URL`, and `NEXT_PUBLIC_CL_CLIENT_ID`. Please note that you cannot know yet which will be the `SITE_URL` until Netlify creates a random site name after the first deployment.
 
-    <img width="500" alt="image" src="https://user-images.githubusercontent.com/1681269/186125308-c9f73c0c-29d2-4b92-a314-7b65e55ed7c1.png">
+    <img width="500" alt="image" src="https://github.com/user-attachments/assets/d8cfffa4-614a-41ac-8d80-b0897551cf78">
 
 4. Click on _"Deploy site"_. We suggest stopping the first auto-deploy by clicking on _"Cancel deploy"_ because this way you can update the `SITE_URL` with the correct information first. You can also speed up the deployment by [disabling the form detection](https://docs.netlify.com/site-deploys/post-processing/form-detection/) (the Demo Store project doesn't include forms managed by Netlify).
 
@@ -42,7 +42,7 @@ From your Vercel dashboard:
 2. Select the correct repository.
 3. Fill in all the required information as per the image below:
 
-    <img width="722" alt="Deploy the Demo Store SSR to Vercel" src="https://user-images.githubusercontent.com/1681269/186161145-5c9b8ebc-6fc2-4642-9fcc-f64adcd2e55e.png">
+    <img width="722" alt="Deploy the Demo Store SSR to Vercel" src="https://github.com/user-attachments/assets/a416b26e-3200-40c1-a8f6-d12b41330b18">
 
 4. Click on _"Deploy"_ and in less than 2 minutes your store will be ready to go.
 

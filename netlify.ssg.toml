@@ -12,4 +12,6 @@
 [template.environment]
   SITE_URL="Base url of your website."
   NEXT_PUBLIC_CL_CLIENT_ID="Commerce Layer Sales Channel Client ID."
-  NEXT_PUBLIC_CL_ENDPOINT="Commerce Layer Sales Channel Endpoint."
+
+[[plugins]]
+  package = "@netlify/plugin-nextjs"

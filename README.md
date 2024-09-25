@@ -35,9 +35,11 @@ The Demo Store comes with:
 
 The integration with Commerce Layer is achieved by leveraging some of our open-source [developer tools](https://commercelayer.io/developers), specifically:
 
+- the [JS Auth](https://github.com/commercelayer/commercelayer-js-auth) library
+- the [Javascript SDK](https://github.com/commercelayer/commercelayer-sdk)
 - the [React components](https://github.com/commercelayer/commercelayer-react-components)
-- the [Hosted cart](https://github.com/commercelayer/commercelayer-cart#embedding-the-cart)
-- the [Hosted checkout](https://github.com/commercelayer/commercelayer-react-checkout)
+- the [Hosted cart](https://github.com/commercelayer/mfe-cart#embedding-the-cart)
+- the [Hosted checkout](https://github.com/commercelayer/mfe-checkout)
 
 ## How it works
 
@@ -62,7 +64,8 @@ The Demo Store project consists of two repositories that you can leverage to bui
 
 If you have no experience with Commerce Layer, you can start by creating an account (it's free!) and following the [onboarding tutorial](https://docs.commercelayer.io/developers/welcome/onboarding-tutorial).
 
-> :information_source: Please note that to set up a Demo Store you need a properly configured organization with at least a few products and one market.
+> [!IMPORTANT]
+> Please note that to set up a Demo Store you need a properly configured organization with at least a few products and one market.
 
 If you prefer to start from scratch, you can create a new organization and use the following commands to configure a Commerce Layer's Demo Store-like project.
 
@@ -127,9 +130,6 @@ Edit `.env.local` and fill in all the missing information:
 ```properties
 # this is the 'sales channel' client id
 NEXT_PUBLIC_CL_CLIENT_ID=er34TWFcd24RFI8KJ52Ws6q...
-
-# this is the 'base endpoint'
-NEXT_PUBLIC_CL_ENDPOINT=https://my-awesome-organization.commercelayer.io
 ```
 
 #### 3. Seed the data
