@@ -15,14 +15,14 @@
   },
   "license": "MIT",
   "dependencies": {
-    "@commercelayer/demo-store-types": "^3.0.0"
+    "@commercelayer/demo-store-types": "^5.0.0"
   },
   "engines": {
-    "node": ">= 18.17",
+    "node": ">= 20.9",
     "npm": ">= 9.6"
   },
   "packageManager": "npm@9.6.7",
   "devDependencies": {
-    "dotenv": "^16.4.5"
+    "dotenv": "^16.5.0"
   }
 }
