@@ -17,7 +17,7 @@ jobs:
 
     strategy:
       matrix:
-       node: [20.9.0, 20.x, 22.x]
+       node: [22.13.0, 22.x, 24.x, 26.x]
 
     steps:
     - name: Checkout 🛎️
@@ -26,7 +26,7 @@ jobs:
         submodules: recursive
 
     - name: Node 🧰
-      uses: actions/setup-node@v4
+      uses: actions/setup-node@v7
       with:
         node-version: ${{ matrix.node }}
         cache: 'npm'
@@ -49,12 +49,12 @@ jobs:
 
     steps:
     - name: Checkout 🛎️
-      uses: actions/checkout@v4
+      uses: actions/checkout@v7
       with:
         submodules: recursive
 
     - name: Cache 💾 # https://nextjs.org/docs/messages/no-cache#github-actions
-      uses: actions/cache@v4
+      uses: actions/cache@v6
       with:
         path: |
           ~/.npm
@@ -66,9 +66,9 @@ jobs:
           ${{ runner.os }}-nextjs-${{ hashFiles('**/package-lock.json') }}-
 
     - name: Node 🧰
-      uses: actions/setup-node@v4
+      uses: actions/setup-node@v7
       with:
-        node-version: 20.x
+        node-version: 22.x
         cache: 'npm'
 
     - name: Install 📦
@@ -85,10 +85,10 @@ jobs:
         NEXT_PUBLIC_DATA_FETCHING: ssg
 
     - name: Setup Pages 📄
-      uses: actions/configure-pages@v5
+      uses: actions/configure-pages@v6
 
     - name: Upload artifact 🚀
-      uses: actions/upload-pages-artifact@v3
+      uses: actions/upload-pages-artifact@v5
       with:
         path: ./demo-store-core/packages/website/out/
 
@@ -104,4 +104,4 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages 🚀
         id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v5
