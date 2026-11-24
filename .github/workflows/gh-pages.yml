@@ -21,7 +21,7 @@ jobs:
 
     steps:
     - name: Checkout 🛎️
-      uses: actions/checkout@v4
+      uses: actions/checkout@v7
       with:
         submodules: recursive
 
@@ -36,7 +36,7 @@ jobs:
 
     - name: Validate JSON Data 🔎
       run: |
-        npm run test:data -ws --if-present
+        npm run test:data --workspaces --if-present
       env:
         NEXT_PUBLIC_JSON_DATA_FOLDER: ../../../data/json/
 
@@ -76,7 +76,7 @@ jobs:
 
     - name: Build 🔧
       run: |
-        npm run build -ws --if-present
+        npm run build --workspaces --if-present
       env:
         SITE_URL: https://commercelayer.github.io/demo-store
         NEXT_PUBLIC_BASE_PATH: /demo-store
