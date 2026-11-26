@@ -139,7 +139,7 @@ NEXT_PUBLIC_CL_CLIENT_ID=er34TWFcd24RFI8KJ52Ws6q...
 The following script will populate your organization with all the resources you need to build a multi-market ecommerce with Commerce Layer (the ones we are using for our [Demo Store](https://commercelayer.github.io/demo-store-core)).
 
 ```sh
-npm run seeder:seed -ws --if-present
+npm run seeder:seed --workspaces --if-present
 ```
 
 If the command above executes with no errors, please [skip to step 4](#4-choose-the-countries-where-youre-going-to-sell). Otherwise, you can still seed your organization with sample data using the CLI by running the following:
@@ -153,7 +153,7 @@ commercelayer seeder:seed -b custom -n demo_store_full -u ./demo-store-core/pack
 The `json/countries.json` file contains a list of available countries for your ecommerce. You can change it with your preferred editor. Just make sure to replace all findings of `"market": xxx` with the related markets of your organization. You can get the list of your markets from the Commerce Layer admin dashboard or by running this command:
 
 ```sh
-npm run markets -ws --if-present
+npm run markets --workspaces --if-present
 ```
 
 #### 5. See it in action :rocket:
